@@ -1,0 +1,37 @@
+/*CSS Documment*/
+@charset "UTF-8";
+
+/*---AJUSTES GENERALES---*/
+
+/*FUENTES*/
+@font-face {
+    font-family: "Very Vogue Display";
+    src: url(fuentes/very-vogue-font/very-vogue-display.otf) format(opentypefont);
+    font-weight: 400;
+    font-display: swap;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "Very Vogue Display Italic";
+    src: url(fuentes/very-vogue-font/very-vogue-display-italic.otf) format(opentypefont);
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Very Vogue text";
+    src: url(fuentes/very-vogue-font/very-vogue-text.otf) format(opentypefont);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Very Vogue Text Italic";
+    src: url(fuentes/very-vogue-font/very-vogue-text-italic.otf) format(opentypefont);
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
