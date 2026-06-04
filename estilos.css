@@ -9,7 +9,7 @@
     src: url(fuentes/very-vogue-font/very-vogue-display.otf) format(opentypefont);
     font-weight: 400;
     font-display: swap;
-    font-style:normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -35,3 +35,53 @@
     font-display: swap;
     font-style: italic;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---AJUSTES ESPECÍFICOS---*/
+
+/*---INDEX HTML---*/
+
+
+/*---NOSOTROS HTML---*/
+/*NAV*/
+.nav-nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #AFE4E6;
+    padding: 25px 60px;
+}
+
+.nav-nosotros ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+.nav-nosotros a {
+    text-decoration: none;
+    color: #430D21;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 800;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.nav-nosotros a:hover {
+    color: #C8D9A7;
+}
+
+/*---MÉTODO PILATES HTML---*/
+
+
+/*---CURSOS HTML---*/
+
+
+/*---CONTACTO HTML---*/
