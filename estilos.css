@@ -6,7 +6,7 @@
 /*FUENTES*/
 @font-face {
     font-family: "Very Vogue Display";
-    src: url(fuentes/very-vogue-font/very-vogue-display.otf) format(opentypefont);
+    src: url("fuentes/very-vogue-font/very-vogue-display.otf") format("opentype");
     font-weight: 400;
     font-display: swap;
     font-style: normal;
@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: "Very Vogue Display Italic";
-    src: url(fuentes/very-vogue-font/very-vogue-display-italic.otf) format(opentypefont);
+    src: url("fuentes/very-vogue-font/very-vogue-display-italic.otf") format("opentype");
     font-weight: 400;
     font-display: swap;
     font-style: italic;
@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: "Very Vogue text";
-    src: url(fuentes/very-vogue-font/very-vogue-text.otf) format(opentypefont);
+    src: url("fuentes/very-vogue-font/very-vogue-text.otf") format("opentype");
     font-weight: 400;
     font-display: swap;
     font-style: normal;
@@ -30,7 +30,7 @@
 
 @font-face {
     font-family: "Very Vogue Text Italic";
-    src: url(fuentes/very-vogue-font/very-vogue-text-italic.otf) format(opentypefont);
+    src: url("fuentes/very-vogue-font/very-vogue-text-italic.otf") format("opentype");
     font-weight: 400;
     font-display: swap;
     font-style: italic;
@@ -39,6 +39,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #EFE3D9;
 }
 
 
@@ -77,6 +78,92 @@ body {
 .nav-nosotros a:hover {
     color: #C8D9A7;
 }
+
+/*HERO*/
+.hero {
+    display: block;
+    margin: 40px auto;
+    max-width: 90%;
+    height: auto;
+}
+
+/*SOBRE CUERPO CONCIENTE*/
+.sobre-cuerpo-conciente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 80px 20px;
+    text-align: center;
+}
+
+.sobre-cuerpo-conciente h2 {
+    font-family: "Very Vogue Text Italic", serif;
+    font-style: italic;
+    font-size: 3rem;
+    color: #430D21;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.sobre-cuerpo-conciente p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    max-width: 750px;
+    color: #430D21;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 60px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: center;
+}
+
+.mision,
+.vision {
+    background-color: #430D21;
+    color: #EFE3D9;
+    padding: 50px 50px;
+    border-radius: 40px;
+    flex: 1;
+    text-align: left;
+}
+
+.cards h3 {
+    color: #AFE4E6;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.cards p,
+.cards ul {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #EFE3D9;
+}
+
+.cards p {
+    margin-bottom: 5px;
+}
+
+.cards ul {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.cards li {
+    margin-bottom: 10px;
+}
+
 
 /*---MÉTODO PILATES HTML---*/
 
