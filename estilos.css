@@ -164,6 +164,57 @@ body {
     margin-bottom: 10px;
 }
 
+/*PERSONAL*/
+
+.personal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 0 20px 80px 20px;
+}
+
+.perfil {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.perfil figcaption h3 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    color: #430D21;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 0 0 5px 0;
+}
+
+.perfil figcaption h4 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: #430D21;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.perfil figcaption p {
+    font-family: 'Inter', sans-serif;
+    color: #430D21;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/*FOOTER*/
+
+
 
 /*---MÉTODO PILATES HTML---*/
 
