@@ -42,6 +42,187 @@ body {
     background-color: #EFE3D9;
 }
 
+/*NAV*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 800;
+    font-size: 0.9rem;
+    transition: color .3s;
+}
+
+/*FOOTER*/
+
+footer {
+    padding: 60px 60px 30px 60px;
+}
+
+.footer-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.footer-superior h3 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.footer-superior .footer-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+.footer-superior .footer-nav a {
+    text-decoration: none;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 800;
+    font-size: 0.85rem;
+    transition: color .3s;
+}
+
+.footer-medio {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 100px;
+}
+
+.footer-medio h2 {
+    font-family: "Very Vogue Text Italic", serif;
+    font-style: italic;
+    font-size: 3.5rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-redes h3,
+.footer-ubicacion h3 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.footer-redes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-redes a,
+.footer-ubicacion p {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 5px 0;
+    display: block;
+}
+
+.footer-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.footer-inferior p {
+    margin: 0;
+}
+
+/* NAV INDEX */
+
+.nav-index,
+.footer-index {
+    background-color: #EFE3D9;
+}
+
+.nav-index *,
+.footer-index * {
+    color: #089D90;
+}
+
+.nav-index a:hover,
+.footer-index a:hover {
+    color: #430D21;
+}
+
+/* NAV NOSOTROS */
+
+.nav-nosotros,
+.footer-nosotros {
+    background-color: #AFE4E6;
+}
+
+.nav-nosotros *,
+.footer-nosotros * {
+    color: #430D21;
+}
+
+.nav-nosotros a:hover,
+.footer-nosotros a:hover {
+    color: #089D90;
+}
+
+/* NAV CONTACTO  */
+
+.nav-contacto,
+.footer-contacto {
+    background-color: #C8D9A7;
+}
+
+.nav-contacto *,
+.footer-contacto * {
+    color: #430D21;
+}
+
+.nav-contacto a:hover,
+.footer-contacto a:hover {
+    color: #089D90;
+}
+
+/* NAV CURSOS  */
+
+.nav-cursos,
+.footer-cursos {
+    background-color: #430D21;
+}
+
+.nav-cursos *,
+.footer-cursos * {
+    color: #EFE3D9;
+}
+
+.nav-cursos a:hover,
+.footer-cursos a:hover {
+    color: #AFE4E6;
+}
 
 /*---ESTILOS TIPOGRÁFICOS GENERALES---*/
 h1 {
@@ -67,7 +248,6 @@ h2 {
 }
 
 h3 {
-    color: #AFE4E6;
     font-family: 'Cabinet Grotesk', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -142,6 +322,33 @@ p {
 
 .heroindex a:hover {
     background-color: #EFE3D9;
+}
+
+.logo {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    display: block;
+}
+
+.logo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s;
+}
+
+.logo-hover {
+    opacity: 0;
+}
+
+.logo:hover .logo-hover {
+    opacity: 1;
+}
+
+.logo:hover .logo-base {
+    opacity: 0;
 }
 
 /*---INDEX FORMACION---*/
@@ -348,35 +555,6 @@ p {
 }
 
 /*---NOSOTROS HTML---*/
-/*NAV*/
-.nav-nosotros {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #AFE4E6;
-    padding: 25px 60px;
-}
-
-.nav-nosotros ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 40px;
-}
-
-.nav-nosotros a {
-    text-decoration: none;
-    color: #430D21;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 800;
-    font-size: 0.9rem;
-    transition: opacity 0.3s ease;
-}
-
-.nav-nosotros a:hover {
-    color: #C8D9A7;
-}
 
 /*HERO*/
 .hero {
@@ -503,138 +681,10 @@ p {
     margin: 0;
 }
 
-/*FOOTER*/
-
-.footer-nosotros {
-    background-color: #AFE4E6;
-    color: #430D21;
-    padding: 60px 60px 30px 60px;
-}
-
-.footer-superior {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 100px;
-}
-
-.footer-superior h3 {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 800;
-    font-size: 1.1rem;
-    margin: 0;
-}
-
-.footer-superior .footer-nav {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 40px;
-}
-
-.footer-superior .footer-nav a {
-    text-decoration: none;
-    color: #430D21;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 800;
-    font-size: 0.85rem;
-    transition: opacity 0.3s ease;
-}
-
-.footer-superior .footer-nav a:hover {
-    color: #C8D9A7;
-}
-
-.footer-medio {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin-bottom: 100px;
-}
-
-.footer-medio h2 {
-    font-family: "Very Vogue Text Italic", serif;
-    font-style: italic;
-    font-size: 3.5rem;
-    font-weight: normal;
-    margin: 0;
-}
-
-.footer-redes h3,
-.footer-ubicacion h3 {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0 0 15px 0;
-}
-
-.footer-redes ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-redes a,
-.footer-ubicacion p {
-    text-decoration: none;
-    color: #430D21;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin: 0 0 5px 0;
-    display: block;
-}
-
-.footer-inferior {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-}
-
-.footer-inferior p {
-    margin: 0;
-}
-
-
 /*---MÉTODO PILATES HTML---*/
 
 
 /*---CURSOS HTML---*/
-/*NAV CURSOS*/
-.nav-cursos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #430D21;
-    padding: 25px 60px;
-}
-
-.nav-cursos ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 40px;
-}
-
-.nav-cursos a {
-    text-decoration: none;
-    color: #DEC1BF;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 800;
-    font-size: 0.9rem;
-    transition: opacity 0.3s ease;
-}
-
-.nav-cursos a:hover {
-    color: #C8D9A7;
-}
-
 
 /* Contenedor principal */
 .contenedor-instructorado {
@@ -681,102 +731,6 @@ p {
 
 .texto-contenedor p strong {
     font-weight: 700;
-}
-
-/* FOOTER CURSOS */
-.footer-cursos {
-    background-color: #DEC1BF;
-    color: #430D21;
-    padding: 60px 60px 30px 60px;
-}
-
-.footer-superior-cursos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 100px;
-}
-
-.footer-superior-cursos h3 {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 800;
-    font-size: 1.1rem;
-    margin: 0;
-}
-
-.footer-superior-cursos .footer-nav {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 40px;
-}
-
-.footer-superior-cursos .footer-nav a {
-    text-decoration: none;
-    color: #430D21;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 800;
-    font-size: 0.85rem;
-    transition: opacity 0.3s ease;
-}
-
-.footer-superior-cursos .footer-nav a:hover {
-    color: #C8D9A7;
-}
-
-.footer-medio-cursos {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin-bottom: 100px;
-}
-
-.footer-medio-cursos h2 {
-    font-family: "Very Vogue Text Italic", serif;
-    font-style: italic;
-    font-size: 3.5rem;
-    font-weight: normal;
-    margin: 0;
-}
-
-.footer-redes-cursos h3,
-.footer-ubicacion-cursos h3 {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0 0 15px 0;
-}
-
-.footer-redes-cursos ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-redes-cursos a,
-.footer-ubicacion-cursos p {
-    text-decoration: none;
-    color: #430D21;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin: 0 0 5px 0;
-    display: block;
-}
-
-.footer-inferior-cursos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-}
-
-.footer-inferior-cursos p {
-    margin: 0;
 }
 
 /*---CONTACTO HTML---*/
