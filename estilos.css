@@ -718,6 +718,83 @@ p {
     font-weight: 800;
 }
 
+/* INFORMACIÓN - ACORDEONES */
+
+.informacion {
+    padding: 80px 150px;
+}
+
+.informacion h2 {
+    color: #089D90;
+    margin-bottom: 50px;
+}
+
+.acordeon {
+    border-top: 1px solid #089D90;
+    padding: 20px 0;
+}
+
+.acordeon:last-of-type {
+    border-bottom: 1px solid #089D90;
+}
+
+.acordeon summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #089D90;
+}
+
+.acordeon summary::-webkit-details-marker {
+    display: none;
+}
+
+.flechita {
+    transition: transform .3s ease;
+}
+
+.acordeon[open] .flechita {
+    transform: rotate(180deg);
+}
+
+.acordeon-contenido {
+    padding-top: 30px;
+}
+
+.acordeon-contenido p {
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+.btn-inscribirme {
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: auto;
+
+    background-color: #089D90;
+    color: #EFE3D9;
+    text-decoration: none;
+
+    padding: 14px 30px;
+
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.btn-inscribirme:hover {
+    background-color: #430D21;
+}
+
+
+
+
 /*---CURSOS HTML---*/
 
 /* CONTENEDOR PRINCIPAL */
