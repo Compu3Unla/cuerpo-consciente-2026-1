@@ -224,6 +224,23 @@ footer {
     color: #AFE4E6;
 }
 
+/*NAV MÉTODO PILATES*/
+.nav-metodopilates,
+.footer-metodopilates {
+    background-color: #089D90;
+}
+
+.nav-metodopilates *,
+.footer-metodopilates * {
+    color: #EFE3D9;
+}
+
+.nav-metodopilates a:hover,
+.footer-metodopilates a:hover {
+    color: #430D21;
+}
+
+
 /*---ESTILOS TIPOGRÁFICOS GENERALES---*/
 h1 {
     font-family: 'Cabinet Grotesk', sans-serif;
@@ -573,16 +590,7 @@ p {
     text-align: center;
 }
 
-/*ESTO LO DEFINI ARRIBA, LO PODRIAMOS BORRAR*/
-.sobre-cuerpo-conciente h2 {
-    font-family: "Very Vogue Text Italic", serif;
-    font-style: italic;
-    font-size: 3rem;
-    color: #430D21;
-    font-weight: normal;
-    margin-bottom: 30px;
-}
-
+/*CARDS*/
 .cards {
     display: flex;
     gap: 30px;
@@ -601,11 +609,9 @@ p {
     text-align: left;
 }
 
-/*ESTO LO DEFINI ARRIBA, LO PODRIAMOS BORRAR*/
+
 .cards h3 {
     color: #AFE4E6;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 700;
     font-size: 1.1rem;
     margin-top: 0;
     margin-bottom: 30px;
@@ -683,10 +689,38 @@ p {
 
 /*---MÉTODO PILATES HTML---*/
 
+/*HERO MÉTODO PILATES*/
+.hero-metodopilates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 80px 100px;
+}
+
+.hero-metodopilates img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+}
+
+.hero-metodopilates div {
+    max-width: 500px;
+}
+
+.hero-metodopilates h3 {
+    color: #089D90;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.hero-metodopilates h3 strong {
+    font-weight: 800;
+}
 
 /*---CURSOS HTML---*/
 
-/* Contenedor principal */
+/* CONTENEDOR PRINCIPAL */
 .contenedor-instructorado {
     display: flex;
     align-items: center;
@@ -697,7 +731,7 @@ p {
     padding-left: 0;
 }
 
-/* hero-cursos-img */
+/* HERO */
 .hero-cursos-img {
     height: 704px;
     width: 740px;
@@ -705,14 +739,14 @@ p {
     border-radius: 0 375.273px 375.273px 0;
 }
 
-/* Bloque de texto */
+
 .texto-contenedor {
     max-width: 600px;
     color: #430D21;
     font-family: 'Inter', sans-serif;
 }
 
-/* Título H3 */
+
 .texto-contenedor h3 {
     color: #430D21;
     font-size: 32.21px;
@@ -721,7 +755,6 @@ p {
     margin-bottom: 20px;
 }
 
-/* p */
 .texto-contenedor p {
     font-size: 20.13px;
     font-weight: 400;
