@@ -791,8 +791,99 @@ p {
 .btn-inscribirme:hover {
     background-color: #430D21;
 }
+/* VENTANAS EMERGENTES */
 
+.ventana-fondo {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
 
+.ventana-fondo.activo {
+    display: flex;
+}
+
+.ventana-contenido {
+    background: #DEC1BF;
+    padding: 80px 60px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.ventana-contenido--formulario {
+    background: #DEC1BF;
+    text-align: left;
+    max-width: 680px;
+    padding: 40px 50px;
+}
+
+.ventana-subtitulo {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: #430D21;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 0 0 24px 0;
+    max-width: none;
+}
+
+.ventana-contenido--formulario input,
+.ventana-contenido--formulario textarea {
+    background: #EFE3D9;
+    border: none;
+    padding: 10px 8px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #430D21;
+    outline: none;
+    margin: 0 0 10px 0;
+    max-width: none;
+}
+
+.ventana-contenido--formulario input::placeholder,
+.ventana-contenido--formulario textarea::placeholder {
+    color: #430D21;
+    letter-spacing: 1px;
+}
+
+.ventana-contenido--formulario textarea {
+    resize: none;
+    height: 80px;
+}
+
+.btn-enviar--derecha {
+    background: #430D21;
+    float: right;
+    margin-top: 8px;
+}
+
+.ventana-titulo {
+    font-family: "Very Vogue Text Italic", serif;
+    font-style: italic;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    color: #430D21;
+    margin: 0 0 24px 0;
+    max-width: none;
+}
+
+.ventana-texto {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    color: #430D21;
+    margin: 0;
+    max-width: none;
+}
 
 
 /*---CURSOS HTML---*/

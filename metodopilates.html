@@ -123,6 +123,47 @@
         </div>
 
     </footer>
+
+    <!--VENTANA INSCRIPCIÓN-->
+    <div class="ventana-fondo" id="ventana-inscripcion">
+        <div class="ventana-contenido ventana-contenido--formulario">
+            <h3 class="ventana-subtitulo">INSCRIPCIÓN</h3>
+            <form id="formulario-inscripcion">
+                <input type="text" placeholder="NOMBRE Y APELLIDO">
+                <input type="tel" placeholder="TELÉFONO">
+                <input type="email" placeholder="CORREO">
+                <input type="text" placeholder="DNI">
+                <textarea placeholder="COMENTARIO"></textarea>
+                <button type="submit" class="btn-enviar btn-enviar--derecha">ENVIAR →</button>
+            </form>
+        </div>
+    </div>
+
+    <!--VENTANA CONFIRMACIÓN-->
+    <div class="ventana-fondo" id="ventana-gracias">
+        <div class="ventana-contenido">
+            <p class="ventana-titulo">¡Muchas gracias!</p>
+            <p class="ventana-texto">Ya recibimos tu información y en breve nos vamos a contactar con vos para asesorarte</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.btn-inscribirme').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('ventana-inscripcion').classList.add('activo');
+        });
+
+        document.getElementById('formulario-inscripcion').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('ventana-inscripcion').classList.remove('activo');
+            document.getElementById('ventana-gracias').classList.add('activo');
+        });
+
+        document.getElementById('ventana-gracias').addEventListener('click', function() {
+            this.classList.remove('activo');
+        });
+    </script>
+
 </body>
 
 </html>
