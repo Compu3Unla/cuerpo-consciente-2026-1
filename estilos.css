@@ -688,6 +688,9 @@ p {
 }
 
 /*---MÉTODO PILATES HTML---*/
+.nav-contacto a:hover img {
+    color: #430D21;
+}
 
 /*HERO MÉTODO PILATES*/
 .hero-metodopilates {
@@ -791,6 +794,7 @@ p {
 .btn-inscribirme:hover {
     background-color: #430D21;
 }
+
 /* VENTANAS EMERGENTES */
 
 .ventana-fondo {
