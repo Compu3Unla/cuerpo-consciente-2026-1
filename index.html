@@ -9,8 +9,8 @@
     <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <title>Cuerpo Conciente</title>
 </head>
 
@@ -102,6 +102,37 @@
                 </figcaption>
             </figure>
         </div>
+        
+        <div class="cursos-slider">
+            <div>
+                <figure>
+                    <img src="img/escritorio/index/card-cursos-1.png" alt="Docentes">
+                    <a href="nosotros.html">DOCENTES</a>
+                    <figcaption>
+                        <p>Profesionales especializados que acompañan tu formación desde la experiencia y el
+                            conocimiento.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="img/escritorio/index/card-cursos-2.png" alt="Instructorado">
+                    <a href="metodopilates.html">INSTRUCTORADO</a>
+                    <figcaption>
+                        <p>Iniciá tu camino como instructor/a con una formación integral y consciente.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="img/escritorio/index/card-cursos-3.png" alt="Especialización">
+                    <a href="cursos.html">ESPECIALIZACIÓN</a>
+                    <figcaption>
+                        <p>Profundizá tus conocimientos en áreas como rehabilitación, postura y movimiento.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
     </section>
 
     <section class="elegirnos">
@@ -167,6 +198,27 @@
         </div>
 
     </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+<script>
+if (window.innerWidth <= 500) {
+    var sliderCursos = tns({
+        container: '.cursos-slider',
+        items: 1,
+        slideBy: 1,
+        loop: false,
+        rewind: true,
+        autoplay: false,
+        controls: false,
+        nav: true,
+        mouseDrag: true,
+        speed: 400,
+        gutter: 20
+    });
+}
+</script>
+
 </body>
 
 </html>
