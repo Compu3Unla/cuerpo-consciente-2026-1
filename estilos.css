@@ -282,7 +282,6 @@ h3 {
 p {
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    max-width: 750px;
     color: #430D21;
     font-size: 1rem;
     line-height: 1.6rem;
@@ -409,8 +408,8 @@ p {
 }
 
 .linea {
-    width: 0.15vw;
-    height: 17vh;
+    width: 2px;
+    height: 120px;
     background-color: #430D21;
 }
 
@@ -420,16 +419,12 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 0.20vw solid #430D21;
-    border-bottom: 0.20vw solid #430D21;
     padding: 60px 20px 30px;
     margin: 0px 90px 0px 90px;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-.cursos-intro {
-    width: 280px;
+    border-top: 2px solid #430D21;
+    border-bottom: 2px solid #430D21;
 }
 
 .cursos-cards {
@@ -472,6 +467,15 @@ p {
 .cursos-cards a:hover {
     background-color: #C8D9A7;
     color: #089D90;
+}
+
+.cursos-intro p {
+max-width: 20vw;
+}
+
+.tns-nav,
+.cursos-slider {
+    display: none;
 }
 
 /* INDEX ELEGIRNOS */
@@ -525,7 +529,6 @@ p {
 
 .reseñas-contenedor img {
     width: 18%;
-    min-width: 220px;
     height: auto;
 }
 
@@ -1310,4 +1313,78 @@ p {
     color: #430D21;
     margin: 0;
     max-width: none;
+}
+
+/* ------ RESPONSIVE ----- */
+@media screen and (max-width: 500px) {
+
+/* INDEX */
+
+.linea {
+        display: none;
+}
+
+    .cursos {
+        margin: 0px;
+        padding: 40px 0 20px;
+        display: block;
+    }
+
+    .cursos-intro {
+        padding: 0px 30px 0px 30px;
+    }
+
+    .cursos-cards {
+        display: none;
+    }
+
+    .cursos-slider {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cursos-slider figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cursos-slider img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .cursos-slider a {
+        margin: 15px auto;
+        text-decoration: none;
+        border-radius: 100px;
+        padding: 10px 20px;
+        font-family: 'Cabinet Grotesk', sans-serif;
+        background-color: #089D90;
+        color: #EFE3D9;
+        font-size: 1.5rem;
+    }
+
+.tns-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0px 10px 0px;
+}
+
+.tns-nav button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #AFE4E6;
+    border: none;
+    cursor: pointer;
+}
+
+.tns-nav .tns-nav-active {
+    background-color: #089D90;
+}
+
 }
