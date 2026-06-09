@@ -695,7 +695,9 @@ p {
 }
 
 /*---MÉTODO PILATES HTML---*/
-.nav-contacto a:hover img {
+
+.nav-metodopilates a:hover,
+.footer-contacto a:hover {
     color: #430D21;
 }
 
@@ -781,7 +783,7 @@ p {
     margin-bottom: 20px;
 }
 
-.btn-inscribirme {
+.btn-inscribirme-metodo {
     display: inline-block;
     margin-top: 60px;
     margin-left: auto;
@@ -798,9 +800,11 @@ p {
     transition: .3s;
 }
 
-.btn-inscribirme:hover {
+.btn-inscribirme-metodo:hover {
     background-color: #430D21;
 }
+
+
 
 /* VENTANAS EMERGENTES */
 
