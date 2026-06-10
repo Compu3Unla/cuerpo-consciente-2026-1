@@ -1375,7 +1375,7 @@ p {
         margin: 0;
         order: 3;
     }
-    
+
     /* ESTADO DEL MENÚ ABIERTO */
 
     nav.menu-abierto ul.nav-links {
@@ -1542,6 +1542,81 @@ p {
         padding-left: 20px;
     }
 
+    /*---MÉTODO PILATES---*/
+
+    /*HERO*/
+    .hero-metodopilates {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 0;
+    }
+
+    .hero-metodopilates div {
+        display: contents;
+    }
+
+    .hero-metodopilates h3 {
+        order: 1;
+        font-size: 2rem; 
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .hero-metodopilates h3 strong {
+        font-weight: 800;
+    }
+
+    .hero-metodopilates img {
+        order: 2;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .hero-metodopilates p {
+        order: 3;
+        font-size: 1.3rem;
+        line-height: 1.5;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    /*ACORDEONES*/
+    .informacion {
+        padding: 50px 40px;
+    }
+
+    .informacion h2 {
+        font-size: 2.5rem;
+        margin-bottom: 35px;
+    }
+
+    .acordeon {
+        padding: 18px 0;
+    }
+
+    .acordeon summary {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        gap: 15px;
+    }
+
+    .acordeon-contenido {
+        padding-top: 20px;
+    }
+
+    .acordeon-contenido p {
+        font-size: 0.95rem;
+        line-height: 1.55;
+        margin-bottom: 10px;
+    }
+
+    /* BOTÓN INSCRIBIRME */
+
+    .btn-inscribirme-metodo img {
+        width: 14px;
+        height: auto;
+    }
 
     /*--CURSOS HTML---*/
 
