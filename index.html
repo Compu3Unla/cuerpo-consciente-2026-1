@@ -34,41 +34,57 @@
 
     <!--HERO-->
     <section class="heroindex">
+
+        <video autoplay muted loop playsinline>
+            <source src="video/hero-index.mp4" type="video/mp4">
+        </video>
+
         <img src="img/escritorio/index/imagen-hero-index.png">
+
         <div class="heroindex-contenido">
             <h1>Convertite en<span><br>instructor</span></h1>
             <p>Aprendé el método desde una mirada <br> consciente, técnica y terapéutica.</p>
             <a href="contacto.html">Empezar formación</a>
         </div>
+
     </section>
 
+    <!--FORMACION-->
     <section class="formacionindex">
         <h2>Formación</h2>
         <div class="formacioncontenidoindex">
+
             <figure>
                 <img src="img/escritorio/iconos/icono-formacion-1.svg" alt="Formación integral">
                 <figcaption>
                     <p>Formación integral<br>(teórica + práctica)</p>
                 </figcaption>
             </figure>
+
             <div class="linea"></div>
+
             <figure>
                 <img src="img/escritorio/iconos/icono-formacion-2.svg" alt="Formación integral">
                 <figcaption>
                     <p>Enfoque consciente<br>del cuerpo</p>
                 </figcaption>
             </figure>
+
             <div class="linea"></div>
+
             <figure>
                 <img src="img/escritorio/iconos/icono-formacion-3.svg" alt="Formación integral">
                 <figcaption>
                     <p>Orientación<br>profesional</p>
                 </figcaption>
             </figure>
+
         </div>
     </section>
 
+    <!--CURSOS-->
     <section class="cursos">
+
         <div class="cursos-intro">
             <h2>Cursos</h2>
             <p>
@@ -77,7 +93,9 @@
             </p>
             <a href="cursos.html">Ver más ofertas</a>
         </div>
+
         <div class="cursos-cards">
+
             <figure>
                 <img src="img/escritorio/index/card-cursos-1.png" alt="Docentes">
                 <a href="nosotros.html">DOCENTES</a>
@@ -86,6 +104,7 @@
                         desde la experiencia y el conocimiento.</p>
                 </figcaption>
             </figure>
+
             <figure>
                 <img src="img/escritorio/index/card-cursos-2.png" alt="Instructorado">
                 <a href="metodopilates.html">INSTRUCTORADO</a>
@@ -94,6 +113,7 @@
                         integral y consciente.</p>
                 </figcaption>
             </figure>
+
             <figure>
                 <img src="img/escritorio/index/card-cursos-3.png" alt="Especialización">
                 <a href="cursos.html">ESPECIALIZACIÓN</a>
@@ -102,9 +122,12 @@
                         postura y movimiento.</p>
                 </figcaption>
             </figure>
+
         </div>
 
+        <!--SLIDER CURSOS-->
         <div class="cursos-slider">
+
             <div>
                 <figure>
                     <img src="img/escritorio/index/card-cursos-1.png" alt="Docentes">
@@ -115,6 +138,7 @@
                     </figcaption>
                 </figure>
             </div>
+
             <div>
                 <figure>
                     <img src="img/escritorio/index/card-cursos-2.png" alt="Instructorado">
@@ -124,6 +148,7 @@
                     </figcaption>
                 </figure>
             </div>
+
             <div>
                 <figure>
                     <img src="img/escritorio/index/card-cursos-3.png" alt="Especialización">
@@ -133,9 +158,11 @@
                     </figcaption>
                 </figure>
             </div>
+
         </div>
     </section>
 
+    <!--ELEGIRNOS-->
     <section class="elegirnos">
         <article class="elegirnos-contenedor">
             <h1>¿Por qué <span><br>elegirnos?</span></h1>
@@ -145,14 +172,17 @@
         </article>
     </section>
 
+    <!--RESEÑAS-->
     <section class="reseñas">
         <h3>Y si no, mirá nuestras reseñas...</h3>
+
         <div class="reseñas-contenedor">
             <img src="img/escritorio/index/review-1.svg" alt="Reseña de Google">
             <img src="img/escritorio/index/review-2.svg" alt="Reseña de Google">
             <img src="img/escritorio/index/review-3.svg" alt="Reseña de Google">
             <img src="img/escritorio/index/review-4.svg" alt="Reseña de Google">
         </div>
+
         <div class="reseñas-slider">
             <div><img src="img/escritorio/index/review-1.svg" alt="Reseña de Google"></div>
             <div><img src="img/escritorio/index/review-2.svg" alt="Reseña de Google"></div>
@@ -161,6 +191,7 @@
         </div>
     </section>
 
+    <!--CTA-->
     <section class="ctaindex">
         <img class="ctaimgizquierda" src="img/escritorio/index/foto-cta-2.png" alt="Alumna Pilates">
         <div class="ctacontenido">
@@ -227,22 +258,22 @@
     </script>
 
     <script>
-if (window.innerWidth <= 500) {
-    tns({
-        container: '.reseñas-slider',
-        items: 1,
-        slideBy: 1,
-        loop: false,
-        rewind: true,
-        autoplay: false,
-        controls: false,
-        nav: true,
-        mouseDrag: true,
-        speed: 400,
-        gutter: 20
-    });
-}
-</script>
+        if (window.innerWidth <= 500) {
+            tns({
+                container: '.reseñas-slider',
+                items: 1,
+                slideBy: 1,
+                loop: false,
+                rewind: true,
+                autoplay: false,
+                controls: false,
+                nav: true,
+                mouseDrag: true,
+                speed: 400,
+                gutter: 20
+            });
+        }
+    </script>
 
 </body>
 
