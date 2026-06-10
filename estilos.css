@@ -182,6 +182,33 @@ footer {
     color: #430D21;
 }
 
+.logo {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    display: block;
+}
+
+.logo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s;
+}
+
+.logo-hover {
+    opacity: 0;
+}
+
+.logo:hover .logo-hover {
+    opacity: 1;
+}
+
+.logo:hover .logo-base {
+    opacity: 0;
+}
+
 /* NAV NOSOTROS */
 
 .nav-nosotros,
@@ -302,24 +329,39 @@ p {
 .heroindex {
     display: flex;
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 190px);
     background-color: #089D90;
     padding: 50px 0px;
     gap: 70px;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
 }
 
 .heroindex img {
-    width: 45vw;
+    width: min(45vw, 700px);
     height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.heroindex video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .heroindex-contenido {
     display: flex;
     flex-direction: column;
     padding: 0px 60px 0px 60px;
+    position: relative;
+    z-index: 1;
 }
 
 .heroindex p {
@@ -347,33 +389,6 @@ p {
 
 .heroindex a:hover {
     background-color: #EFE3D9;
-}
-
-.logo {
-    position: relative;
-    width: 44px;
-    height: 44px;
-    display: block;
-}
-
-.logo img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity .3s;
-}
-
-.logo-hover {
-    opacity: 0;
-}
-
-.logo:hover .logo-hover {
-    opacity: 1;
-}
-
-.logo:hover .logo-base {
-    opacity: 0;
 }
 
 /*---INDEX FORMACION---*/
@@ -1405,8 +1420,8 @@ p {
     }
 
     .reseñas-slider img {
-    display: block;
-    margin: 0 auto;
-}
+        display: block;
+        margin: 0 auto;
+    }
 
 }
