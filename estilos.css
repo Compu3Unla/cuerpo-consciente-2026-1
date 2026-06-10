@@ -76,6 +76,15 @@ nav a {
     transition: color .3s;
 }
 
+/*MENÚ HAMBURGUESA OCULTO*/
+.btn-hamburguesa {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
 /*FOOTER*/
 
 footer {
@@ -1339,6 +1348,40 @@ p {
 /* ------ RESPONSIVE ----- */
 @media screen and (max-width: 500px) {
 
+    /*MENÚ HAMBURGUESA*/
+    nav {
+        padding: 20px 30px;
+        flex-wrap: wrap;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-hamburguesa {
+        display: block;
+        order: 1;
+    }
+
+    .logo-nav {
+        order: 2;
+        margin-left: auto;
+    }
+
+    nav ul.nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 30px 0 10px 0;
+        margin: 0;
+        order: 3;
+    }
+    
+    /* ESTADO DEL MENÚ ABIERTO */
+
+    nav.menu-abierto ul.nav-links {
+        display: flex;
+    }
+
     /*--- INDEX ---*/
 
     .reseñas-contenedor,
@@ -1426,6 +1469,8 @@ p {
 
 
     /*---NOSOTROS HTML---*/
+
+    /*MENÚ HAMBURGUESA*/
 
     /*QUIENES SOMOS*/
     .sobre-cuerpo-conciente {
