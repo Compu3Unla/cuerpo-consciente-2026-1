@@ -18,12 +18,15 @@
 <body>
     <header>
         <!--BARRA DE NAVEGACIÓN-->
-        <nav class="nav-index">
-            <a href="index.html" class="logo">
-                <img class="logo-base" src="img/escritorio/iconos/logo-cuerpo-conciente-verde.svg" alt="logo">
+        <nav class="nav-index" id="nav-principal">
+            <button class="btn-hamburguesa" aria-label="Abrir menú">
+                <img src="img/mobile/menu-hamburguesa-icono-verde.svg" alt="Menú">
+            </button>
+            <a href="index.html" class="logo logo-nav"> <img class="logo-base"
+                    src="img/escritorio/iconos/logo-cuerpo-conciente-verde.svg" alt="logo">
                 <img class="logo-hover" src="img/escritorio/iconos/logo-cuepo-conciente-bordo.svg" alt="logo">
             </a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="nosotros.html">NOSOTROS</a></li>
                 <li><a href="metodopilates.html">MÉTODO PILATES</a></li>
                 <li><a href="cursos.html">CURSOS</a></li>
@@ -236,6 +239,22 @@
         </div>
 
     </footer>
+
+    <!--JAVASCRIPT-->
+
+    <!--MENÚ HAMBURGUESA-->
+    <script>
+
+        const btnHamburguesa = document.querySelector('.btn-hamburguesa');
+        const navPrincipal = document.getElementById('nav-principal');
+
+
+        btnHamburguesa.addEventListener('click', () => {
+            navPrincipal.classList.toggle('menu-abierto');
+        });
+    </script>
+
+    <!--SLIDDER-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 

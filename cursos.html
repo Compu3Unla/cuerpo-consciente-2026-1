@@ -16,11 +16,12 @@
 
 <body>
     <header>
-        <nav class="nav-cursos">
-            <a href="index.html">
+        <nav class="nav-cursos" id="nav-principal"> <button class="btn-hamburguesa" aria-label="Abrir menú">
+                <img src="img/mobile/menu-hamburguesa-icono-cremita.svg" alt="Menú"> </button>
+            <a href="index.html" class="logo-nav">
                 <img src="img/escritorio/iconos/logo-cuerpo-conciente-cremita.svg" alt="logo" width="44px">
             </a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="nosotros.html">NOSOTROS</a></li>
                 <li><a href="metodopilates.html">MÉTODO PILATES</a></li>
                 <li><a href="cursos.html">CURSOS</a></li>
@@ -309,8 +310,20 @@
         </div>
     </footer>
 
+    <!--JAVASCRIPT-->
 
- 
+    <!--MENÚ HAMBURGUESA-->
+    <script>
+
+        const btnHamburguesa = document.querySelector('.btn-hamburguesa');
+        const navPrincipal = document.getElementById('nav-principal');
+
+
+        btnHamburguesa.addEventListener('click', () => {
+            navPrincipal.classList.toggle('menu-abierto');
+        });
+    </script>
+
 </body>
 
 </html>

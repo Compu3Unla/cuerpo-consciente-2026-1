@@ -1470,8 +1470,6 @@ p {
 
     /*---NOSOTROS HTML---*/
 
-    /*MENÚ HAMBURGUESA*/
-
     /*QUIENES SOMOS*/
     .sobre-cuerpo-conciente {
         padding: 0 32px 60px;
@@ -1546,19 +1544,6 @@ p {
 
 
     /*--CURSOS HTML---*/
-    .nav-cursos {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .nav-cursos ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 0;
-    }
-
 
     .contenedor-instructorado {
         flex-direction: column;
