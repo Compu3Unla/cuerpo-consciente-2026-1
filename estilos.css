@@ -1425,3 +1425,148 @@ p {
     }
 
 }
+
+
+/*RESPONSIVE */
+/*Cursos*/
+@media (max-width: 500px) {
+    @media (max-width: 500px) {
+
+        .nav-cursos {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .nav-cursos ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 0;
+        }
+    }
+
+    .contenedor-instructorado {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 15px;
+    }
+
+    .hero-cursos-img {
+        max-width: 100%;
+        border-radius: 0 100px 100px 0;
+    }
+
+    .texto-contenedor h3 {
+        font-size: 24px;
+    }
+
+    .texto-contenedor p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .titulo-seccion {
+        font-size: 48px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    /*especializaciones*/
+    .contenedor-cards {
+        gap: 40px;
+        padding: 0 10px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+
+    .preguntas-frecuentes {
+        padding: 40px 15px;
+    }
+
+    .preguntas-frecuentes .acordeon-cursos summary {
+        font-size: 1.1rem;
+    }
+
+    .preguntas-frecuentes .acordeon-contenido-cursos p {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    /* Footer: */
+    .footer-cursos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    .footer-superior,
+    .footer-medio {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 10px;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-superior .footer-nav a {
+        text-decoration: none;
+        font-family: 'Cabinet Grotesk', sans-serif;
+        font-size: 1.7rem;
+        transition: color .3s;
+    }
+
+    .footer-nav li a {
+        font-size: 40px;
+        font-weight: 700;
+        display: block;
+    }
+
+    .footer-superior h3 {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .footer-cursos h3,
+    .footer-cursos h2 {
+        margin: 0 0 10px 0;
+    }
+
+
+    .footer-redes,
+    .footer-ubicacion {
+        margin-top: 10px;
+    }
+
+
+    .footer-inferior {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .footer-inferior p {
+        margin: 0;
+    }
+}
