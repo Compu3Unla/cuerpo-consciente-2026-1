@@ -1427,6 +1427,23 @@ p {
 
 /*---NOSOTROS HTML---*/
 
+.sobre-cuerpo-conciente {
+    padding: 0 32px 60px;
+}
+
+.sobre-cuerpo-conciente h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sobre-cuerpo-conciente p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 0;
+}
+
 /*--CURSOS HTML---*/
     .nav-cursos {
         flex-direction: column;
