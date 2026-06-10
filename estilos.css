@@ -1427,6 +1427,7 @@ p {
 
 /*---NOSOTROS HTML---*/
 
+/*QUIENES SOMOS*/
 .sobre-cuerpo-conciente {
     padding: 0 32px 60px;
 }
@@ -1443,6 +1444,28 @@ p {
     text-align: left;
     margin-bottom: 0;
 }
+
+/*CARDS*/
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.cards h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cards p,
+.cards ul {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+
 
 /*--CURSOS HTML---*/
     .nav-cursos {
