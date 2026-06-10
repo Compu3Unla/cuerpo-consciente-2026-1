@@ -9,7 +9,8 @@
     <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
     <title>Cuerpo Conciente</title>
 </head>
 
@@ -18,7 +19,7 @@
         <!--BARRA DE NAVEGACIÓN-->
         <nav class="nav-nosotros">
             <a href="index.html">
-            <img src="img/escritorio/iconos/logo-cuepo-conciente-bordo.svg" alt="logo" width="44px">
+                <img src="img/escritorio/iconos/logo-cuepo-conciente-bordo.svg" alt="logo" width="44px">
             </a>
             <ul>
                 <li><a href="nosotros.html">NOSOTROS</a></li>
@@ -30,8 +31,11 @@
     </header>
 
     <!--HERO-->
-    <img class="hero" src="img/escritorio/nosotros/foto-hero-nosotros.png" alt="foto hero" width="1920px">
+    <picture>
+        <source media="(max-width: 500px)" srcset="img/mobile/foto-hero-nosotros-mobile.png">
 
+        <img class="hero" src="img/escritorio/nosotros/foto-hero-nosotros.png" alt="foto hero">
+    </picture>
     <!--SOBRE CUERPO CONCIENTE-->
     <section class="sobre-cuerpo-conciente">
         <h2>Quiénes somos</h2>
