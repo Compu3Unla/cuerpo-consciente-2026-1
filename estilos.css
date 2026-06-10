@@ -1338,8 +1338,8 @@ p {
 
 /* ------ RESPONSIVE ----- */
 @media screen and (max-width: 500px) {
-
-    /* INDEX */
+    
+/*--- INDEX ---*/
 
     .reseñas-contenedor,
     .cursos-cards,
@@ -1424,27 +1424,23 @@ p {
         margin: 0 auto;
     }
 
-}
 
+/*---NOSOTROS HTML---*/
 
-/*RESPONSIVE */
-/*Cursos*/
-@media (max-width: 500px) {
-    @media (max-width: 500px) {
-
-        .nav-cursos {
-            flex-direction: column;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .nav-cursos ul {
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            padding: 0;
-        }
+/*--CURSOS HTML---*/
+    .nav-cursos {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
     }
+
+    .nav-cursos ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+    }
+
 
     .contenedor-instructorado {
         flex-direction: column;
@@ -1471,6 +1467,7 @@ p {
         text-align: center;
         padding-bottom: 20px;
     }
+
     /*especializaciones*/
     .contenedor-cards {
         gap: 40px;
