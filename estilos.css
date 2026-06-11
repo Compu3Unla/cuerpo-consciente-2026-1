@@ -1606,7 +1606,7 @@ p {
     }
 
     .acordeon-contenido p {
-        font-size: 0.95rem;
+        font-size: 1.2rem;
         line-height: 1.55;
         margin-bottom: 10px;
     }
@@ -1623,7 +1623,7 @@ p {
     .contenedor-instructorado {
         flex-direction: column;
         gap: 20px;
-        padding: 40px 25px;
+        padding: 40px 0;
     }
 
     .titulo-seccion {
@@ -1637,13 +1637,19 @@ p {
         border-radius: 0 100px 100px 0;
     }
 
+    .texto-contenedor {
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
     .texto-contenedor h3 {
-        font-size: 24px;
+        font-size: 26px;
+        margin-top: 20px;
     }
 
     .texto-contenedor p {
-        font-size: 16px;
-        line-height: 1.5;
+        font-size: 18px;
+        line-height: 2rem;
     }
 
     .titulo-seccion {
