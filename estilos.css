@@ -1544,6 +1544,7 @@ p {
     .cursos-slider figure {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .reseñas-slider img,
