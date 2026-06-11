@@ -1621,40 +1621,35 @@ p {
     /*--CURSOS HTML---*/
 
     .contenedor-instructorado {
-        display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 40px 0;
-    }
-
-    .hero-cursos-img {
-        width: auto;
-        min-width: 350px;
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-        border-radius: 0;
-    }
-
-    .texto-contenedor {
-        padding: 0 25px;
-    }
-
-    .texto-contenedor h3 {
-        font-size: 26px;
-        margin-top: 15px;
-    }
-
-    .texto-contenedor p {
-        font-size: 18px;
-        line-height: 1.5;
-        margin-bottom: 15px;
+        padding: 40px 25px;
     }
 
     .titulo-seccion {
         font-size: 36px;
+        line-height: 1.2;
+        padding-bottom: 15px;
+    }
+
+    .hero-cursos-img {
+        max-width: 100%;
+        border-radius: 0 100px 100px 0;
+    }
+
+    .texto-contenedor h3 {
+        font-size: 24px;
+    }
+
+    .texto-contenedor p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .titulo-seccion {
+        font-size: 48px;
         text-align: center;
-        padding: 0 25px 20px;
+        padding-bottom: 20px;
     }
 
     /*especializaciones*/
@@ -1679,12 +1674,12 @@ p {
     }
 
     .preguntas-frecuentes .acordeon-cursos summary {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .preguntas-frecuentes .acordeon-contenido-cursos p {
         width: 100%;
-        font-size: 0.95rem;
+        font-size: 1.2rem;
     }
 
     /* Footer: */
