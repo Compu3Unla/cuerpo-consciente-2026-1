@@ -252,6 +252,11 @@ footer {
     color: #089D90;
 }
 
+.footer-contacto .footer-nav a:hover {
+    color: #089D90;
+}
+
+
 /* NAV CURSOS  */
 
 .nav-cursos,
@@ -606,6 +611,19 @@ p {
 
 .reseñas-slider {
     display: none;
+}
+
+/* Animacion reseñas */
+
+.reseñas-contenedor img {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reseñas-contenedor img.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* INDEX CTA */

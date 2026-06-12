@@ -47,7 +47,7 @@
         <div class="heroindex-contenido">
             <h1>Convertite en<span><br>instructor</span></h1>
             <p>Aprendé el método desde una mirada consciente, técnica y terapéutica.</p>
-            <a href="contacto.html">Empezar formación</a>
+            <a href="#" class="btn-abrir-inscripcion">Empezar formación</a>
         </div>
 
     </section>
@@ -241,7 +241,7 @@
     </footer>
 
 
-<!--VENTANA INSCRIPCIÓN-->
+    <!--VENTANA INSCRIPCIÓN-->
     <div class="ventana-fondo" id="ventana-inscripcion">
         <div class="ventana-contenido ventana-contenido--formulario">
             <h3 class="ventana-subtitulo">INSCRIPCIÓN</h3>
@@ -261,23 +261,26 @@
     <div class="ventana-fondo" id="ventana-gracias">
         <div class="ventana-contenido">
             <p class="ventana-titulo">¡Muchas gracias!</p>
-            <p class="ventana-texto">Ya recibimos tu información y en breve nos vamos a contactar con vos para asesorarte</p>
+            <p class="ventana-texto">Ya recibimos tu información y en breve nos vamos a contactar con vos para
+                asesorarte</p>
         </div>
     </div>
 
     <script>
-        document.querySelector('.btn-abrir-inscripcion').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.getElementById('ventana-inscripcion').classList.add('activo');
-        });
+        document.querySelectorAll('.btn-abrir-inscripcion').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.getElementById('ventana-inscripcion').classList.add('activo');
+    });
+});
 
-        document.getElementById('formulario-inscripcion').addEventListener('submit', function(e) {
+        document.getElementById('formulario-inscripcion').addEventListener('submit', function (e) {
             e.preventDefault();
             document.getElementById('ventana-inscripcion').classList.remove('activo');
             document.getElementById('ventana-gracias').classList.add('activo');
         });
 
-        document.getElementById('ventana-gracias').addEventListener('click', function() {
+        document.getElementById('ventana-gracias').addEventListener('click', function () {
             this.classList.remove('activo');
         });
     </script>
@@ -319,6 +322,8 @@
         }
     </script>
 
+    <!--animacion reseñas-->
+
     <script>
         if (window.innerWidth <= 500) {
             tns({
@@ -337,6 +342,23 @@
         }
     </script>
 
+    <script>
+        const reseñas = document.querySelectorAll('.reseñas-contenedor img');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, i * 150);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        reseñas.forEach(r => observer.observe(r));
+    </script>
 </body>
+
+
 
 </html>
