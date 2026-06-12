@@ -343,8 +343,7 @@ p {
     background-color: #089D90;
     padding: 50px 0px;
     gap: 70px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
@@ -615,18 +614,18 @@ p {
     height: 90vh;
     padding: 60px 0px;
     display: flex;
-    flex-wrap: wrap;
+}
+
+.ctaimgderecha,
+.ctaimgizquierda {
+    width: 23vw;
 }
 
 .ctaimgizquierda {
-    width: 23vw;
-    min-width: 220px;
     align-self: flex-end;
 }
 
 .ctaimgderecha {
-    width: 23vw;
-    min-width: 220px;
     align-self: flex-start;
 }
 
@@ -637,7 +636,6 @@ p {
     align-items: center;
     text-align: center;
     flex: 1;
-    flex-wrap: wrap;
 }
 
 .ctacontenido a {
@@ -646,10 +644,12 @@ p {
     align-items: center;
     width: 250px;
     height: 50px;
+    margin: 20px;
     border-radius: 100px;
     background: #C8D9A7;
     font-family: 'Cabinet Grotesk', sans-serif;
     font-size: 1.4rem;
+    font-weight: 700;
     color: #089D90;
     text-decoration: none;
 }
@@ -1363,9 +1363,11 @@ p {
 #ventana-gracias .ventana-contenido {
     background: #DEC1BF;
 }
+
 #ventana-gracias-contacto .ventana-contenido {
     background: #C8D9A7;
 }
+
 /* ------ RESPONSIVE ----- */
 @media screen and (max-width: 500px) {
 
@@ -1407,8 +1409,8 @@ p {
     /*---AJUSTES TIPOGRAFICOS GENERALES---*/
 
     h1 {
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 2.8rem;
+        line-height: 3.2rem;
     }
 
     h1 span {
@@ -1422,25 +1424,11 @@ p {
 
     /*--- INDEX ---*/
 
+    /* HERO */
     .heroindex {
         gap: 0px;
         padding: 20px 0px;
         height: calc(100vh - 120px);
-    }
-
-    .ctacontenido a,
-    .cursos a,
-    .heroindex a {
-        width: 175px;
-        height: 35px;
-        padding: 12px;
-        font-size: 1.2rem;
-        margin: 0px;
-    }
-
-    .cursos-intro p {
-        max-width: 100vw;
-        margin-bottom: 30px;
     }
 
     .heroindex img {
@@ -1451,6 +1439,8 @@ p {
         margin-top: 10px;
     }
 
+    /* FORMACION */
+
     .formacioncontenidoindex img {
         min-width: 40vw;
     }
@@ -1459,33 +1449,48 @@ p {
         margin-bottom: 0;
     }
 
+    /* ELEGIRNOS */
+
     .elegirnos {
-        padding: 50px 20px;
+        padding: 50px 0px 0px 0px;
+    }
+
+    .elegirnos-contenedor {
+        justify-content: center;
     }
 
     .elegirnos-contenedor p {
         width: 100%;
-        border-radius: 30px;
-        padding: 30px;
+        border-radius: 200px 0 0 200px;
+        margin-top: 50px;
     }
 
+    .elegirnos h1 {
+        text-align: center;
+    }
+
+    /* RESEÑAS */
+
     .reseñas {
-        padding: 50px 0;
+        padding: 10px 0px 60px 0px;
+    }
+
+    .reseñas .tns-nav button {
+        background-color: #C8D9A7;
+    }
+
+    .reseñas .tns-nav .tns-nav-active {
+        background-color: #430D21;
+    }
+
+    .reseñas-slider img {
+        display: block;
+        margin: 0 auto;
     }
 
     .reseñas h3 {
         margin-bottom: 30px;
         font-size: 1.6rem;
-    }
-
-    .ctaindex {
-        padding: 50px 20px;
-        justify-content: center;
-    }
-
-    .ctaimgizquierda,
-    .ctaimgderecha {
-        display: none;
     }
 
     .reseñas-contenedor,
@@ -1494,9 +1499,44 @@ p {
         display: none;
     }
 
+    /* CTA */
+
+    .ctaindex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ctaimgderecha,
+    .ctaimgizquierda {
+        width: 38vw;
+    }
+
+    .ctacontenido a,
+    .cursos a,
+    .heroindex a {
+        width: 180px;
+        height: 35px;
+        padding: 12px;
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+
+        .ctacontenido a {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .ctaimgizquierda {
+        align-self: flex-start;
+    }
+
+    .ctaimgderecha {
+        align-self: flex-end;
+    }
+
+    /* CURSOS */
+
     .cursos {
         margin: 0px;
-        padding: 40px 0 20px;
         display: block;
     }
 
@@ -1506,19 +1546,28 @@ p {
 
     .cursos-intro p {
         max-width: 100vw;
+        margin-bottom: 30px;
     }
 
     .reseñas-slider,
     .cursos-slider {
         display: block;
         width: 100%;
-        margin: 0 auto;
     }
 
     .cursos-slider figure {
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+
+    .cursos-slider a {
+        text-decoration: none;
+        border-radius: 100px;
+        font-family: 'Cabinet Grotesk', sans-serif;
+        background-color: #089D90;
+        color: #EFE3D9;
+        font-size: 1.5rem;
+        margin: 20px 0px 0px 0px;
     }
 
     .reseñas-slider img,
@@ -1526,17 +1575,6 @@ p {
         width: 100%;
         max-width: 320px;
         height: auto;
-    }
-
-    .cursos-slider a {
-        margin: 15px auto;
-        text-decoration: none;
-        border-radius: 100px;
-        padding: 10px 20px;
-        font-family: 'Cabinet Grotesk', sans-serif;
-        background-color: #089D90;
-        color: #EFE3D9;
-        font-size: 1.5rem;
     }
 
     .tns-nav {
@@ -1556,19 +1594,6 @@ p {
 
     .tns-nav .tns-nav-active {
         background-color: #089D90;
-    }
-
-    .reseñas .tns-nav button {
-        background-color: #C8D9A7;
-    }
-
-    .reseñas .tns-nav .tns-nav-active {
-        background-color: #430D21;
-    }
-
-    .reseñas-slider img {
-        display: block;
-        margin: 0 auto;
     }
 
 
