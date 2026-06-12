@@ -37,20 +37,13 @@
 }
 
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden;
     background-color: #EFE3D9;
 }
-
-html,
-body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 /*NAV*/
 
 nav {
@@ -1061,15 +1054,6 @@ p {
     align-items: flex-start;
 }
 
-.titulo-seccion {
-    color: #430D21;
-    font-family: "Very Vogue", serif;
-    padding-bottom: 20px;
-    font-size: 84px;
-    font-style: italic;
-    font-weight: 400;
-}
-
 
 .titulo-seccion {
     color: #430D21;
@@ -1079,6 +1063,7 @@ p {
     font-weight: 400;
     line-height: normal;
     margin: 0;
+    padding-bottom: 20px
 }
 
 /* --- Contenedor de Cards --- */
@@ -1367,8 +1352,6 @@ p {
     display: block;
 }
 
-
-
 /* FORMULARIO MÉTODO PILATES Y CURSOS */
 .ventana-contenido--formulario {
     background: #DEC1BF;
@@ -1608,6 +1591,7 @@ p {
         line-height: 1.7;
         text-align: left;
         margin-bottom: 0;
+        
     }
 
     /*CARDS*/
