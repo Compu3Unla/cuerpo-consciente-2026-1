@@ -342,9 +342,9 @@ p {
     padding: 50px 0px;
     gap: 70px;
     align-items: center;
-    flex-wrap: wrap;
     position: relative;
     overflow: hidden;
+    justify-content: flex-start;
 }
 
 .heroindex img {
@@ -400,7 +400,7 @@ p {
 
 /*---INDEX FORMACION---*/
 .formacionindex {
-    padding: 80px 50px 50px;
+    padding: 80px 0px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -424,9 +424,8 @@ p {
 }
 
 .formacioncontenidoindex img {
-    display: block;
     width: 100%;
-    max-width: 18vw;
+    max-width: 14vw;
     height: auto;
 }
 
@@ -442,8 +441,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 20px 30px;
-    margin: 0px 90px 0px 90px;
+    padding: 70px 20px 30px;
+    margin: 0px 80px 0px 80px;
     flex-wrap: wrap;
     gap: 30px;
     position: relative;
@@ -1430,6 +1429,7 @@ p {
         gap: 0px;
         padding: 20px 0px;
         height: calc(100vh - 120px);
+        flex-wrap: wrap;
     }
 
     .heroindex img {
