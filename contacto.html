@@ -17,8 +17,10 @@
 <body>
     <header>
         <!--BARRA DE NAVEGACIÓN-->
-        <nav class="nav-contacto" id="nav-principal"> <button class="btn-hamburguesa" aria-label="Abrir menú">
-                <img src="img/mobile/menu-hamburguesa-icono-bordo.svg" alt="Menú"> </button>
+        <nav class="nav-contacto" id="nav-principal">
+            <button class="btn-hamburguesa" aria-label="Abrir menú">
+                <img src="img/mobile/menu-hamburguesa-icono-bordo.svg" alt="Menú">
+            </button>
             <a href="index.html" class="logo-nav">
                 <img src="img/escritorio/iconos/logo-cuepo-conciente-bordo.svg" alt="logo" width="44px">
             </a>
@@ -93,13 +95,11 @@
         </div>
     </footer>
 
-    <!--MENSAJE DE CONFIRMACIÓN-->
-
-    <div class="modal-overlay" id="modal">
-        <div class="modal-box">
-            <p class="modal-titulo">¡Muchas gracias!</p>
-            <p class="modal-texto">Ya recibimos tu información y en breve nos vamos a contactar con vos para asesorarte
-            </p>
+    <!--VENTANA CONFIRMACIÓN-->
+    <div class="ventana-fondo" id="ventana-gracias-contacto">
+        <div class="ventana-contenido">
+            <p class="ventana-titulo">¡Muchas gracias!</p>
+            <p class="ventana-texto">Ya recibimos tu información y en breve nos vamos a contactar con vos para asesorarte</p>
         </div>
     </div>
 
@@ -107,24 +107,22 @@
 
     <!--MENÚ HAMBURGUESA-->
     <script>
-
         const btnHamburguesa = document.querySelector('.btn-hamburguesa');
         const navPrincipal = document.getElementById('nav-principal');
-
 
         btnHamburguesa.addEventListener('click', () => {
             navPrincipal.classList.toggle('menu-abierto');
         });
     </script>
 
-<!--FORMULARIO-->
+    <!--FORMULARIO-->
     <script>
-        document.getElementById('contacto-form').addEventListener('submit', function (e) {
+        document.getElementById('contacto-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            document.getElementById('modal').classList.add('activo');
+            document.getElementById('ventana-gracias-contacto').classList.add('activo');
         });
 
-        document.getElementById('modal').addEventListener('click', function () {
+        document.getElementById('ventana-gracias-contacto').addEventListener('click', function() {
             this.classList.remove('activo');
         });
     </script>

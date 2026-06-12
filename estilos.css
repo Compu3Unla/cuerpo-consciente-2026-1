@@ -1349,9 +1349,9 @@ p {
     display: block;
 }
 
-/* mensaje pop up contacto*/
+/* ventana emergente contacto */
 
-.modal-overlay {
+.ventana-fondo {
     display: none;
     position: fixed;
     inset: 0;
@@ -1361,11 +1361,11 @@ p {
     justify-content: center;
 }
 
-.modal-overlay.activo {
+.ventana-fondo.activo {
     display: flex;
 }
 
-.modal-box {
+.ventana-contenido {
     background: #C8D9A7;
     padding: 80px 60px;
     max-width: 500px;
@@ -1373,17 +1373,17 @@ p {
     text-align: center;
 }
 
-.modal-titulo {
+.ventana-titulo {
     font-family: "Very Vogue Text Italic", serif;
     font-style: italic;
     font-size: 4rem;
-    line-height: 2rem;
+    line-height: 4.5rem;
     color: #430D21;
     margin: 0 0 24px 0;
     max-width: none;
 }
 
-.modal-texto {
+.ventana-texto {
     font-family: 'Cabinet Grotesk', sans-serif;
     font-size: 1.5rem;
     line-height: 1.7rem;
@@ -1879,5 +1879,65 @@ p {
 
     .footer-inferior p {
         margin: 0;
+    }
+
+    /*---CONTACTO---*/
+
+    .contacto-section {
+        flex-direction: column;
+        padding: 40px 24px;
+        gap: 40px;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+
+    .mapa-box {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .mapa-embed {
+        height: 220px;
+    }
+
+    .ventana-contenido {
+        padding: 50px 30px;
+    }
+
+    .ventana-titulo {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .ventana-texto {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    .footer-contacto .footer-superior,
+    .footer-contacto .footer-medio {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer-contacto .footer-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-contacto .footer-nav li a {
+        font-size: 40px;
+        font-weight: 700;
+        display: block;
+    }
+
+    .footer-contacto .footer-inferior {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        margin-top: 30px;
     }
 }
