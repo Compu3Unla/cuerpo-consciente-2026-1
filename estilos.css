@@ -307,9 +307,19 @@ p {
     font-family: "Inter", sans-serif;
     font-weight: 500;
     color: #430D21;
-    font-size: 1rem;
-    line-height: 1.6rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
     margin-bottom: 60px;
+    
+}
+
+li {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #430D21;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin-bottom: 20px;
 }
 
 /*---INDEX HTML---*/
@@ -1020,12 +1030,7 @@ p {
     margin-bottom: 20px;
 }
 
-.texto-contenedor p {
-    font-size: 20.13px;
-    font-weight: 400;
-    line-height: 37.04px;
-    margin-bottom: 20px;
-}
+
 
 .texto-contenedor p strong {
     font-weight: 700;
@@ -1095,9 +1100,8 @@ p {
 .card-descripcion p {
     color: #430D21;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 37.153px;
+    font-size: 1.1rem;
+    line-height: 37px;
     margin: 0 0 10px 0;
     width: 100%;
     max-width: 450px
@@ -1106,8 +1110,8 @@ p {
 .card-descripcion ul {
     color: #430D21;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
-    line-height: 37.153px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
     padding-left: 20px;
     margin: 0;
 }
