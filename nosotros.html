@@ -162,6 +162,23 @@
 
     <!--JAVASCRIPT-->
 
+<!--ANIMACIÓN PERFILES-->
+<script>
+    const perfiles = document.querySelectorAll('.perfil');
+
+    const observerPerfiles = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, i * 150);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    perfiles.forEach(p => observerPerfiles.observe(p));
+</script>
+
     <!--MENÚ HAMBURGUESA-->
     <script>
 
