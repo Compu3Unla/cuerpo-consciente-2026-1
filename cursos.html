@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <title>Cuerpo Conciente</title>
 </head>
 
@@ -45,7 +46,7 @@
 
             <p>Nuestros cursos y especializaciones, con más de 21 años de experiencia, están diseñados para
                 personas
-                que deseen tomarse “en serio” el Método Pilates, y necesiten asegurarse una formación a
+                que deseen tomarse "en serio" el Método Pilates, y necesiten asegurarse una formación a
                 conciencia,
                 que les posibilite desempeñarse con conocimiento y criterio en el trabajo con grupos
                 heterogéneos de
@@ -190,93 +191,218 @@
 
                 <button class="btn-inscribirme">INSCRIBIRME</button>
             </article>
-
-            <section class="preguntas-frecuentes">
-                <h2>Preguntas frecuentes</h2>
-
-                <details class="acordeon-cursos" open>
-                    <summary>
-                        ¿Cómo elijo un lugar donde tomar clases del método pilates?
-                        <img class="flechita" src="img/escritorio/iconos/flechita-desplegables-2.svg" alt="flechita"
-                            width="40px">
-                    </summary>
-                    <div class="acordeon-contenido-cursos">
-                        <p>
-                            No es lo más importante que el lugar sea bonito, bien decorado y que las camas estén bien
-                            lustras. vas a encontrar mucho marketing de moda en el mercado y poco profesionalismo. No te
-                            olvides, el Método Pilates posee su enfoque en la reeducación de la salud postural y no se
-                            lo debe simplificar ligándolo exclusivamente a una función meramente estética. Muchos
-                            lugares lamentablemente, encontraron en el Método Pilates una formar de aumentar sus
-                            ingresos, pero no se dedican a trabajar profesionalmente para que el alumno logre
-                            resultados, mejore su postura y su salud en forma integral.
-                        </p>
-                    </div>
-                </details>
-
-                <details class="acordeon-cursos">
-                    <summary>
-                        ¿Es importante saber quién va a ser mi instructor?
-                        <img class="flechita" src="img/escritorio/iconos/flechita-desplegables-2.svg" alt="flechita"
-                            width="40px">
-                    </summary>
-                    <div class="acordeon-contenido-cursos">
-                        <p>
-                            No es importante, es imprescindible saber quien va a estar a cargo de tu clase de Pilates.
-                            Ya que hay muchos improvisados, que piensan que dar clases de Pilates, es repetir de manera
-                            indiscriminada un protocolo de ejercicios que aprendieron de memoria y que bajaron de
-                            Internet ó creen que trabajar en un Reformer es algo asi, como poner un programa de lavado,
-                            en un lavarropas automático. Muchos se largaron a dar clases de Pilates, siendo profes de
-                            Educación Física o Instructores de otras técnicas, sin poseer los conocimientos específicos
-                            del Método Pilates, debido al auge mediático que tuvo el Método en los últimos años en
-                            nuestro país. Se abrieron infinidad de lugares, que superaron a la cantidad de profesionales
-                            formados para cubrir tantos puestos de trabajo.
-                        </p>
-                    </div>
-                </details>
-
-                <details class="acordeon-cursos">
-                    <summary>
-                        ¿El método pilates es solo elongación?
-                        <img class="flechita" src="img/escritorio/iconos/flechita-desplegables-2.svg" alt="flechita"
-                            width="40px">
-                    </summary>
-                    <div class="acordeon-contenido-cursos">
-                        <p>
-                            Pilates, tonifica, elonga y alinea posturalmente. Vas a ganar mucha elongación si practicás
-                            el Método Pilates, pero, a su vez, vas a tonificar y mucho, probablemente de una manera
-                            diferente a las que ya conocés si trabajaste en una sala de musculación de un gimnasio, ya
-                            que trabajarás a partir del trabajo de centramiento del cuerpo. Pilates descubrió la
-                            importancia de construir un centro de fuerza, a partir del cual fluya el movimiento desde el
-                            centro, hasta la periferia (hacia las extremidades del cuerpo, como para mover un brazo, la
-                            cabeza o una pierna, sin desestabilizar el conjunto del cuerpo, dándole un sustento sólido a
-                            cada gesto motriz). Este centro, que llamó "mansión del poder" ó "power house", esta
-                            constituido por la músculatura que circunda el cuerpo, justo debajo de la cintura, alrededor
-                            de la pelvis. En el mismo lugar donde se encuentra nuestro centro de gravedad, es el punto
-                            de aplicación de las fuerzas de gravedad de los distintos segmentos corporales.
-                        </p>
-                    </div>
-                </details>
-
-                <details class="acordeon-cursos">
-                    <summary>
-                        ¿Es pilates un buen entrenamiento para hombres o solo para mujeres?
-                        <img class="flechita" src="img/escritorio/iconos/flechita-desplegables-2.svg" alt="flechita"
-                            width="40px">
-                    </summary>
-                    <div class="acordeon-contenido-cursos">
-                        <p>
-                            Lo primero que hay que decir es que no hay un Método Pilates para mujeres y otro, para
-                            hombres. Hay un solo Método Pilates y es unisex, tanto sean hombres como mujeres, ya que
-                            cada clase es adaptada a las características, posibilidades y necesidades de cada uno de
-                            nuestros alumnos. En nuestro país Pilates fue presentado, con una fuerte estrategia de
-                            marketing, que apuntaba a mostrar infinidad de modelos practicando la técnica. Sinónimo de
-                            "hacé pilates y tendrás el cuerpo escultural que tienen ellas". Lógicamente que esto generó,
-                            que la platea masculina no se interesara por tomar clases de pilates.
-                        </p>
-                    </div>
-                </details>
-            </section>
         </div>
+<!--SLIDER CARDS MOBILE - FILA 1-->
+<div class="cards-slider" id="cards-slider-fila1">
+    <div>
+        <article class="card">
+            <img src="img/escritorio/cursos/cursos-tercera-edad.png" alt="Tercera Edad">
+            <h3 class="card-titulo">TERCERA EDAD</h3>
+            <div class="card-descripcion">
+                <p>Requiere de un tratamiento específico acorde con sus necesidades, enfermedades y capacidades específicas, enfocándose en la prevención de enfermedades corporales.</p>
+                <ul>
+                    <li>Menor incidencia de caídas y fracturas</li>
+                    <li>Retraso en la aparición de osteoporosis</li>
+                </ul>
+            </div>
+            <ul class="card-etiquetas">
+                <li>3 MESES</li>
+                <li>36 HORAS</li>
+                <li>TEÓRICO/PRÁCTICO</li>
+            </ul>
+            <button class="btn-inscribirme">INSCRIBIRME</button>
+        </article>
+    </div>
+
+    <div>
+        <article class="card">
+            <img src="img/escritorio/cursos/cursos-embarazadas.png" alt="Embarazadas">
+            <h3 class="card-titulo">EMBARAZADAS</h3>
+            <div class="card-descripcion">
+                <p>Entrenamientos planificados de manera individual en función de cada mes de gestación, teniendo en cuenta el proceso de embarazo que se esté atravesando.</p>
+                <ul>
+                    <li>Tonificación equilibrada de músculos</li>
+                    <li>Ejercitación de espalda y columna</li>
+                </ul>
+            </div>
+            <ul class="card-etiquetas">
+                <li>4 MESES</li>
+                <li>48 HORAS</li>
+                <li>TEÓRICO/PRÁCTICO</li>
+            </ul>
+            <button class="btn-inscribirme">INSCRIBIRME</button>
+        </article>
+    </div>
+
+    <div>
+        <article class="card">
+            <img src="img/escritorio/cursos/cursos-dolor-corporal.png" alt="Dolor corporal">
+            <h3 class="card-titulo">DOLOR CORPORAL</h3>
+            <div class="card-descripcion">
+                <p>Eliminar las tensiones y corregir las malas posturas, estirando y fortaleciendo los músculos que protegen a la columna vertebral, responsables de la salud de la espalda.</p>
+                <ul>
+                    <li>Trabajo en la musculatura excéntrica</li>
+                    <li>Ayuda en los dolores de columna</li>
+                </ul>
+            </div>
+            <ul class="card-etiquetas">
+                <li>6 MESES</li>
+                <li>120 HORAS</li>
+                <li>TEÓRICO/PRÁCTICO</li>
+            </ul>
+            <button class="btn-inscribirme">INSCRIBIRME</button>
+        </article>
+    </div>
+</div>
+
+<!--SLIDER CARDS MOBILE - FILA 2-->
+<div class="cards-slider" id="cards-slider-fila2">
+    <div>
+        <article class="card">
+            <img src="img/escritorio/cursos/cursos-jugador-de-golf.png" alt="Jugador de golf">
+            <h3 class="card-titulo">JUGADOR DE GOLF</h3>
+            <div class="card-descripcion">
+                <p>El Método Pilates es excelente aliado para potenciar la fuerza, resistencia, control muscular y corrección de la postura que se requieren para jugar 18 hoyos de golf.</p>
+                <ul>
+                    <li>Corrección de desequilibrios musculares</li>
+                    <li>Mejora en la postura a la hora del juego</li>
+                </ul>
+            </div>
+            <ul class="card-etiquetas">
+                <li>2 MESES</li>
+                <li>20 HORAS</li>
+                <li>TEÓRICO/PRÁCTICO</li>
+            </ul>
+            <button class="btn-inscribirme">INSCRIBIRME</button>
+        </article>
+    </div>
+
+    <div>
+        <article class="card">
+            <img src="img/escritorio/cursos/cursos-plataforma-vibratoria.png" alt="Plataforma vibratoria">
+            <h3 class="card-titulo">PLATAFORMA VIBRATORIA</h3>
+            <div class="card-descripcion">
+                <p>Las plataformas vibratorias son muy útiles en el tratamiento de la osteoporosis las vibraciones actúan sobre el cuerpo entero cuando hay una contracción muscular.</p>
+                <ul>
+                    <li>Mejora la densidad de los huesos.</li>
+                    <li>Ayuda al completo fortalecimiento óseo.</li>
+                </ul>
+            </div>
+            <ul class="card-etiquetas">
+                <li>2 MESES</li>
+                <li>20 HORAS</li>
+                <li>TEÓRICO/PRÁCTICO</li>
+            </ul>
+            <button class="btn-inscribirme">INSCRIBIRME</button>
+        </article>
+    </div>
+
+    <div>
+        <article class="card">
+            <img src="img/escritorio/cursos/cursos-reeducación-de-postura.png" alt="Reeducación de postura">
+            <h3 class="card-titulo">REEDUCACIÓN DE POSTURA</h3>
+            <div class="card-descripcion">
+                <p>El principal objetivo del Método Pilates es la reeducación postural y justamente combatir al sedentarismo. Trabajamos en la reducación corporal consciente y precisa.</p>
+                <ul>
+                    <li>Trabajo en la musculatura excéntrica</li>
+                    <li>Eliminación de dolores musculares</li>
+                </ul>
+            </div>
+            <ul class="card-etiquetas">
+                <li>6 MESES</li>
+                <li>60 HORAS</li>
+                <li>TEÓRICO/PRÁCTICO</li>
+            </ul>
+            <button class="btn-inscribirme">INSCRIBIRME</button>
+        </article>
+    </div>
+</div>
+
+        <section class="preguntas-frecuentes">
+            <h2>Preguntas frecuentes</h2>
+
+            <details class="acordeon-cursos" open>
+                <summary>
+                    ¿Cómo elijo un lugar donde tomar clases del método pilates?
+                    <img class="flechita" src="img/escritorio/iconos/flechita-desplegables-2.svg" alt="flechita"
+                        width="40px">
+                </summary>
+                <div class="acordeon-contenido-cursos">
+                    <p>
+                        No es lo más importante que el lugar sea bonito, bien decorado y que las camas estén bien
+                        lustras. vas a encontrar mucho marketing de moda en el mercado y poco profesionalismo. No te
+                        olvides, el Método Pilates posee su enfoque en la reeducación de la salud postural y no se
+                        lo debe simplificar ligándolo exclusivamente a una función meramente estética. Muchos
+                        lugares lamentablemente, encontraron en el Método Pilates una formar de aumentar sus
+                        ingresos, pero no se dedican a trabajar profesionalmente para que el alumno logre
+                        resultados, mejore su postura y su salud en forma integral.
+                    </p>
+                </div>
+            </details>
+
+            <details class="acordeon-cursos">
+                <summary>
+                    ¿Es importante saber quién va a ser mi instructor?
+                    <img class="flechita" src="img/escritorio/iconos/flechita-desplegables-2.svg" alt="flechita"
+                        width="40px">
+                </summary>
+                <div class="acordeon-contenido-cursos">
+                    <p>
+                        No es importante, es imprescindible saber quien va a estar a cargo de tu clase de Pilates.
+                        Ya que hay muchos improvisados, que piensan que dar clases de Pilates, es repetir de manera
+                        indiscriminada un protocolo de ejercicios que aprendieron de memoria y que bajaron de
+                        Internet ó creen que trabajar en un Reformer es algo asi, como poner un programa de lavado,
+                        en un lavarropas automático. Muchos se largaron a dar clases de Pilates, siendo profes de
+                        Educación Física o Instructores de otras técnicas, sin poseer los conocimientos específicos
+                        del Método Pilates, debido al auge mediático que tuvo el Método en los últimos años en
+                        nuestro país. Se abrieron infinidad de lugares, que superaron a la cantidad de profesionales
+                        formados para cubrir tantos puestos de trabajo.
+                    </p>
+                </div>
+            </details>
+
+            <details class="acordeon-cursos">
+                <summary>
+                    ¿El método pilates es solo elongación?
+                    <img class="flechita" src="img/escritorio/iconos/flechita-desplegables-2.svg" alt="flechita"
+                        width="40px">
+                </summary>
+                <div class="acordeon-contenido-cursos">
+                    <p>
+                        Pilates, tonifica, elonga y alinea posturalmente. Vas a ganar mucha elongación si practicás
+                        el Método Pilates, pero, a su vez, vas a tonificar y mucho, probablemente de una manera
+                        diferente a las que ya conocés si trabajaste en una sala de musculación de un gimnasio, ya
+                        que trabajarás a partir del trabajo de centramiento del cuerpo. Pilates descubrió la
+                        importancia de construir un centro de fuerza, a partir del cual fluya el movimiento desde el
+                        centro, hasta la periferia (hacia las extremidades del cuerpo, como para mover un brazo, la
+                        cabeza o una pierna, sin desestabilizar el conjunto del cuerpo, dándole un sustento sólido a
+                        cada gesto motriz). Este centro, que llamó "mansión del poder" ó "power house", esta
+                        constituido por la músculatura que circunda el cuerpo, justo debajo de la cintura, alrededor
+                        de la pelvis. En el mismo lugar donde se encuentra nuestro centro de gravedad, es el punto
+                        de aplicación de las fuerzas de gravedad de los distintos segmentos corporales.
+                    </p>
+                </div>
+            </details>
+
+            <details class="acordeon-cursos">
+                <summary>
+                    ¿Es pilates un buen entrenamiento para hombres o solo para mujeres?
+                    <img class="flechita" src="img/escritorio/iconos/flechita-desplegables-2.svg" alt="flechita"
+                        width="40px">
+                </summary>
+                <div class="acordeon-contenido-cursos">
+                    <p>
+                        Lo primero que hay que decir es que no hay un Método Pilates para mujeres y otro, para
+                        hombres. Hay un solo Método Pilates y es unisex, tanto sean hombres como mujeres, ya que
+                        cada clase es adaptada a las características, posibilidades y necesidades de cada uno de
+                        nuestros alumnos. En nuestro país Pilates fue presentado, con una fuerte estrategia de
+                        marketing, que apuntaba a mostrar infinidad de modelos practicando la técnica. Sinónimo de
+                        "hacé pilates y tendrás el cuerpo escultural que tienen ellas". Lógicamente que esto generó,
+                        que la platea masculina no se interesara por tomar clases de pilates.
+                    </p>
+                </div>
+            </details>
+        </section>
     </section>
 
     <footer class="footer-cursos">
@@ -357,12 +483,45 @@
 
     <!--JAVASCRIPT-->
 
+    <!--SLIDER CURSOS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <script>
+    if (window.innerWidth <= 500) {
+        var sliderCursosCardsFila1 = tns({
+            container: '#cards-slider-fila1',
+            items: 1,
+            slideBy: 1,
+            loop: false,
+            rewind: true,
+            autoplay: false,
+            controls: false,
+            nav: true,
+            mouseDrag: true,
+            speed: 400,
+            gutter: 20
+        });
+
+        var sliderCursosCardsFila2 = tns({
+            container: '#cards-slider-fila2',
+            items: 1,
+            slideBy: 1,
+            loop: false,
+            rewind: true,
+            autoplay: false,
+            controls: false,
+            nav: true,
+            mouseDrag: true,
+            speed: 400,
+            gutter: 20
+        });
+    }
+</script>
+
     <!--MENÚ HAMBURGUESA-->
     <script>
-
         const btnHamburguesa = document.querySelector('.btn-hamburguesa');
         const navPrincipal = document.getElementById('nav-principal');
-
 
         btnHamburguesa.addEventListener('click', () => {
             navPrincipal.classList.toggle('menu-abierto');
