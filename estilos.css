@@ -1589,7 +1589,6 @@ font-size: 1 rem;
         background-color: #089D90;
     }
 
-
     /*---NOSOTROS HTML---*/
 
     /*QUIENES SOMOS*/
@@ -1772,17 +1771,29 @@ font-size: 1 rem;
         display: none;
     }
 
+    .especializaciones {
+        padding: 0px;
+    }
+
     .card {
         max-width: 100%;
     }
 
     .card img {
         width: 100%;
-        max-width: 320px;
+        max-width: 70vw;
         height: auto;
         border-radius: 30px;
     }
 
+    .cards-slider{
+    display: block;
+    width: 100%;
+    }
+
+    .cards-slider p {
+    max-width: 90vw;
+    }
 
     .preguntas-frecuentes {
         padding: 40px 15px;
