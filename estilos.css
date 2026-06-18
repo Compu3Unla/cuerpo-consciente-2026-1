@@ -298,7 +298,6 @@ h2 {
     font-size: 3rem;
     color: #430D21;
     font-weight: normal;
-    margin-bottom: 30px;
 }
 
 h3 {
@@ -339,10 +338,11 @@ ul {
     position: relative;
     overflow: hidden;
     justify-content: flex-start;
+    max-height: 900px;
 }
 
 .heroindex img {
-    width: min(45vw, 900px);
+    width: min(45vw, 1100px);
     height: auto;
     position: relative;
     z-index: 1;
@@ -355,6 +355,7 @@ ul {
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    filter: brightness(0.80);
 }
 
 .heroindex-contenido {
@@ -394,11 +395,11 @@ ul {
 
 /*---INDEX FORMACION---*/
 .formacionindex {
-    padding: 80px 0px 0px;
+    padding: 90px 0px 90px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 60px;
+    margin: 80px 0px 50px;
 }
 
 .formacioncontenidoindex {
@@ -408,6 +409,11 @@ ul {
     width: 80%;
     flex-wrap: wrap;
 }
+
+.formacionindex h2 {
+    margin: 0;
+}
+
 
 .formacioncontenidoindex figure {
     padding: 0px 40px;
@@ -434,18 +440,16 @@ ul {
 
 .cursos {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 60px 20px 30px;
     margin: 0px 90px 0px 90px;
-    flex-wrap: wrap;
     gap: 30px;
     position: relative;
 }
 
 .cursos-cards {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .cursos-cards figure {
@@ -466,13 +470,13 @@ ul {
     padding: 10px 20px;
     font-family: 'Cabinet Grotesk', sans-serif;
     background-color: #EFE3D9;
-    color: #089D90;
+    color: #430D21;
     font-size: 1.3rem;
-    border: 2px solid #089D90;
+    border: 2px solid #430D21;
 }
 
 .cursos-cards a {
-    background-color: #089D90;
+    background-color:#430D21;
     color: #EFE3D9;
 }
 
@@ -482,7 +486,7 @@ ul {
 
 .cursos-cards a:hover {
     background-color: #C8D9A7;
-    color: #089D90;
+    color: #430D21;
 }
 
 .cursos-intro p {
@@ -550,9 +554,9 @@ ul {
 
 .elegirnos-contenedor {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: baseline;
-    flex-wrap: wrap;
+    gap: 200px;
 }
 
 .elegirnos-contenedor h1 {
@@ -564,6 +568,7 @@ ul {
     background-color: #C8D9A7;
     border-radius: 100px 0 0 100px;
     padding: 60px 80px;
+    width: 50%;
 }
 
 .elegirnos-contenedor p span {
@@ -616,7 +621,7 @@ ul {
 /* INDEX CTA */
 
 .ctaindex {
-    background-color: #089D90;
+    background-color:#430D21;
     height: 90vh;
     padding: 60px 0px;
     display: flex;
@@ -1413,6 +1418,7 @@ ul {
         padding: 20px 0px;
         height: calc(100vh - 120px);
         flex-wrap: wrap;
+        max-height: 100vh;
     }
 
     .heroindex img {
@@ -1441,6 +1447,8 @@ ul {
 
     .elegirnos-contenedor {
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     .elegirnos-contenedor p {
@@ -1498,7 +1506,7 @@ ul {
     .ctacontenido a,
     .cursos a,
     .heroindex a {
-        width: 180px;
+        width: 200px;
         height: 35px;
         padding: 12px;
         font-size: 1.2rem;
@@ -1548,7 +1556,7 @@ ul {
         text-decoration: none;
         border-radius: 100px;
         font-family: 'Cabinet Grotesk', sans-serif;
-        background-color: #089D90;
+        background-color:#430D21;
         color: #EFE3D9;
         font-size: 1.5rem;
         margin: 20px 0px 0px 0px;
