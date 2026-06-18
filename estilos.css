@@ -1771,8 +1771,9 @@ font-size: 1 rem;
         display: none;
     }
 
-    .especializaciones {
-        padding: 0px;
+.especializaciones {
+        padding: 0px 30px; 
+        box-sizing: border-box;
     }
 
     .card {
@@ -1796,7 +1797,7 @@ font-size: 1 rem;
     }
 
     .preguntas-frecuentes {
-        padding: 40px 15px;
+        padding: 40px 0px;
     }
 
     .preguntas-frecuentes .acordeon-cursos summary {
