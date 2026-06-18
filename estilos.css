@@ -184,31 +184,9 @@ footer {
     color: #430D21;
 }
 
-.logo {
-    position: relative;
-    width: 44px;
-    height: 44px;
-    display: block;
-}
-
-.logo img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity .3s;
-}
-
-.logo-hover {
-    opacity: 0;
-}
-
-.logo:hover .logo-hover {
-    opacity: 1;
-}
-
-.logo:hover .logo-base {
-    opacity: 0;
+.nav-metodopilates .logo:hover img,
+.nav-index .logo:hover img {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(24%) saturate(2513%) hue-rotate(314deg);
 }
 
 /* NAV NOSOTROS */
@@ -216,6 +194,11 @@ footer {
 .nav-nosotros,
 .footer-nosotros {
     background-color: #AFE4E6;
+}
+
+.nav-nosotros a:hover img,
+.nav-contacto a:hover img {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(80%) saturate(400%) hue-rotate(130deg);
 }
 
 .nav-nosotros *,
@@ -267,6 +250,11 @@ footer {
     color: #AFE4E6;
 }
 
+.nav-cursos .logo:hover img {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(18%) saturate(483%) hue-rotate(137deg) brightness(95%) contrast(92%);
+}
+
+
 /*NAV MÉTODO PILATES*/
 .nav-metodopilates,
 .footer-metodopilates {
@@ -283,6 +271,9 @@ footer {
     color: #430D21;
 }
 
+.nav-metodopilates .logo:hover img {
+    filter: brightness(0) saturate(100%) invert(8%) sepia(42%) saturate(3277%) hue-rotate(320deg) brightness(92%) contrast(101%);
+}
 
 /*---ESTILOS TIPOGRÁFICOS GENERALES---*/
 h1 {
@@ -678,6 +669,7 @@ p {
     align-items: center;
     padding: 40px 20px 80px 20px;
     text-align: center;
+    text-wrap: balance;
 }
 
 /*CARDS*/
@@ -1235,10 +1227,6 @@ font-size: 1 rem;
 
 /*---CONTACTO HTML---*/
 
-.nav-contacto a:hover img {
-    filter: brightness(0) saturate(100%) invert(40%) sepia(80%) saturate(400%) hue-rotate(130deg);
-}
-
 .contacto-section {
     display: flex;
     flex-direction: row;
@@ -1248,6 +1236,7 @@ font-size: 1 rem;
     min-height: auto;
     align-items: center;
     box-sizing: border-box;
+    min-height: calc(100vh - 120px - 400px);
 }
 
 .form-box {
@@ -1425,27 +1414,14 @@ font-size: 1 rem;
         line-height: 1.5;
     }
 
-    /*--- INDEX ---*/
+      /*--- INDEX ---*/
 
+    /* HERO */
     .heroindex {
         gap: 0px;
         padding: 20px 0px;
         height: calc(100vh - 120px);
-    }
-
-    .ctacontenido a,
-    .cursos a,
-    .heroindex a {
-        width: 175px;
-        height: 35px;
-        padding: 12px;
-        font-size: 1.2rem;
-        margin: 0px;
-    }
-
-    .cursos-intro p {
-        max-width: 100vw;
-        margin-bottom: 30px;
+        flex-wrap: wrap;
     }
 
     .heroindex img {
@@ -1456,6 +1432,8 @@ font-size: 1 rem;
         margin-top: 10px;
     }
 
+    /* FORMACION */
+
     .formacioncontenidoindex img {
         min-width: 40vw;
     }
@@ -1464,33 +1442,48 @@ font-size: 1 rem;
         margin-bottom: 0;
     }
 
+    /* ELEGIRNOS */
+
     .elegirnos {
-        padding: 50px 20px;
+        padding: 50px 0px 0px 0px;
+    }
+
+    .elegirnos-contenedor {
+        justify-content: center;
     }
 
     .elegirnos-contenedor p {
         width: 100%;
-        border-radius: 30px;
-        padding: 30px;
+        border-radius: 200px 0 0 200px;
+        margin-top: 50px;
     }
 
+    .elegirnos h1 {
+        text-align: center;
+    }
+
+    /* RESEÑAS */
+
     .reseñas {
-        padding: 50px 0;
+        padding: 10px 0px 60px 0px;
+    }
+
+    .reseñas .tns-nav button {
+        background-color: #C8D9A7;
+    }
+
+    .reseñas .tns-nav .tns-nav-active {
+        background-color: #430D21;
+    }
+
+    .reseñas-slider img {
+        display: block;
+        margin: 0 auto;
     }
 
     .reseñas h3 {
         margin-bottom: 30px;
         font-size: 1.6rem;
-    }
-
-    .ctaindex {
-        padding: 50px 20px;
-        justify-content: center;
-    }
-
-    .ctaimgizquierda,
-    .ctaimgderecha {
-        display: none;
     }
 
     .reseñas-contenedor,
@@ -1499,9 +1492,44 @@ font-size: 1 rem;
         display: none;
     }
 
+    /* CTA */
+
+    .ctaindex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ctaimgderecha,
+    .ctaimgizquierda {
+        width: 38vw;
+    }
+
+    .ctacontenido a,
+    .cursos a,
+    .heroindex a {
+        width: 180px;
+        height: 35px;
+        padding: 12px;
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+
+        .ctacontenido a {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .ctaimgizquierda {
+        align-self: flex-start;
+    }
+
+    .ctaimgderecha {
+        align-self: flex-end;
+    }
+
+    /* CURSOS */
+
     .cursos {
         margin: 0px;
-        padding: 40px 0 20px;
         display: block;
     }
 
@@ -1511,26 +1539,28 @@ font-size: 1 rem;
 
     .cursos-intro p {
         max-width: 100vw;
+        margin-bottom: 30px;
     }
 
     .reseñas-slider,
-    .cursos-slider, 
-    .cards-slider {
+    .cursos-slider {
         display: block;
         width: 100%;
-        margin: 0 auto;
     }
-.cards-slider {
-    margin-bottom: 40px;
-}
 
-.cards-slider:last-of-type {
-    margin-bottom: 0;
-}
     .cursos-slider figure {
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+
+    .cursos-slider a {
+        text-decoration: none;
+        border-radius: 100px;
+        font-family: 'Cabinet Grotesk', sans-serif;
+        background-color: #089D90;
+        color: #EFE3D9;
+        font-size: 1.5rem;
+        margin: 20px 0px 0px 0px;
     }
 
     .reseñas-slider img,
@@ -1538,17 +1568,6 @@ font-size: 1 rem;
         width: 100%;
         max-width: 320px;
         height: auto;
-    }
-
-    .cursos-slider a {
-        margin: 15px auto;
-        text-decoration: none;
-        border-radius: 100px;
-        padding: 10px 20px;
-        font-family: 'Cabinet Grotesk', sans-serif;
-        background-color: #089D90;
-        color: #EFE3D9;
-        font-size: 1.5rem;
     }
 
     .tns-nav {
@@ -1570,19 +1589,6 @@ font-size: 1 rem;
         background-color: #089D90;
     }
 
-    .reseñas .tns-nav button {
-        background-color: #C8D9A7;
-    }
-
-    .reseñas .tns-nav .tns-nav-active {
-        background-color: #430D21;
-    }
-
-    .reseñas-slider img {
-        display: block;
-        margin: 0 auto;
-    }
-
 
     /*---NOSOTROS HTML---*/
 
@@ -1595,14 +1601,6 @@ font-size: 1 rem;
         font-size: 3rem;
         text-align: center;
         margin-bottom: 30px;
-    }
-
-    .sobre-cuerpo-conciente p {
-        font-size: 1.2rem;
-        line-height: 1.7;
-        text-align: left;
-        margin-bottom: 0;
-        
     }
 
     /*CARDS*/
