@@ -609,18 +609,18 @@ p {
     height: 90vh;
     padding: 60px 0px;
     display: flex;
-    flex-wrap: wrap;
+}
+
+.ctaimgderecha,
+.ctaimgizquierda {
+    width: 23vw;
 }
 
 .ctaimgizquierda {
-    width: 23vw;
-    min-width: 220px;
     align-self: flex-end;
 }
 
 .ctaimgderecha {
-    width: 23vw;
-    min-width: 220px;
     align-self: flex-start;
 }
 
@@ -631,7 +631,6 @@ p {
     align-items: center;
     text-align: center;
     flex: 1;
-    flex-wrap: wrap;
 }
 
 .ctacontenido a {
@@ -640,10 +639,12 @@ p {
     align-items: center;
     width: 250px;
     height: 50px;
+    margin: 20px;
     border-radius: 100px;
     background: #C8D9A7;
     font-family: 'Cabinet Grotesk', sans-serif;
     font-size: 1.4rem;
+    font-weight: 700;
     color: #089D90;
     text-decoration: none;
 }
@@ -1078,14 +1079,13 @@ p {
     gap: 15px;
     width: 80%;
     max-width: 394px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 /* --- Img --- */
 .card img {
     width: 394px;
     height: 490px;
-    padding: 20px;
     margin: 10px;
     border: 70px;
     margin-bottom: 20px;
@@ -1414,7 +1414,7 @@ font-size: 1 rem;
         line-height: 1.5;
     }
 
-      /*--- INDEX ---*/
+/*--- INDEX ---*/
 
     /* HERO */
     .heroindex {
@@ -1769,10 +1769,6 @@ font-size: 1 rem;
     /*especializaciones*/
     .contenedor-cards {
         display: none;
-    }
-
-    .especializaciones {
-        padding: 0px;
     }
 
     .card {
