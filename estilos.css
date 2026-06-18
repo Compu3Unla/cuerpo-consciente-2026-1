@@ -37,13 +37,15 @@
 }
 
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
     background-color: #EFE3D9;
 }
+
 /*NAV*/
 
 nav {
@@ -302,7 +304,7 @@ h2 {
 h3 {
     font-family: 'Cabinet Grotesk', sans-serif;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-top: 0;
     margin-bottom: 30px;
 }
@@ -311,8 +313,17 @@ p {
     font-family: "Inter", sans-serif;
     font-weight: 500;
     color: #430D21;
-    font-size: 1rem;
-    line-height: 1.6rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin-bottom: 60px;
+}
+
+ul {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #430D21;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
     margin-bottom: 60px;
 }
 
@@ -702,10 +713,6 @@ p {
 
 .cards p,
 .cards ul {
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 0.95rem;
-    line-height: 1.6;
     color: #EFE3D9;
 }
 
@@ -749,7 +756,7 @@ p {
     font-family: 'Cabinet Grotesk', sans-serif;
     font-weight: 700;
     color: #430D21;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 800;
     margin: 0 0 5px 0;
 }
@@ -757,7 +764,7 @@ p {
 .perfil figcaption h4 {
     font-family: 'Cabinet Grotesk', sans-serif;
     color: #430D21;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin: 0 0 15px 0;
 }
@@ -765,15 +772,15 @@ p {
 .perfil figcaption p {
     font-family: 'Inter', sans-serif;
     color: #430D21;
-    font-size: 0.9rem;
-    line-height: 1.6;
     margin: 0;
 }
+
 .perfil {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
 .perfil.visible {
     opacity: 1;
     transform: translateY(0);
@@ -1028,9 +1035,7 @@ p {
 }
 
 .texto-contenedor p {
-    font-size: 20.13px;
-    font-weight: 400;
-    line-height: 37.04px;
+    line-height: 2rem;
     margin-bottom: 20px;
 }
 
@@ -1050,12 +1055,6 @@ p {
 
 
 .titulo-seccion {
-    color: #430D21;
-    font-family: "Very Vogue", serif;
-    font-size: 84px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
     margin: 0;
     padding-bottom: 20px
 }
@@ -1076,7 +1075,7 @@ p {
 .card {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     width: 80%;
     max-width: 394px;
     align-items: flex-start;
@@ -1087,7 +1086,6 @@ p {
     width: 394px;
     height: 490px;
     margin: 10px;
-    border: 70px;
     margin-bottom: 20px;
 }
 
@@ -1104,19 +1102,13 @@ p {
 .card-descripcion p {
     color: #430D21;
     font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     margin: 10px 0 10px 0;
     width: 100%;
     max-width: 450px
 }
 
 .card-descripcion ul {
-    color: #430D21;
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    line-height: 1.6rem;
     padding-left: 20px;
     margin: 10px 0 10px 0;
 }
@@ -1145,9 +1137,9 @@ p {
 /* --- Botón --- */
 .btn-inscribirme {
     width: 175px;
-height: 45px;
-padding: 12px;
-font-size: 1 rem;
+    height: 45px;
+    padding: 12px;
+    font-size: 1.1rem;
     background: #430D21;
     color: #EFE3D9;
     font-family: "Cabinet Grotesk", sans-serif;
@@ -1165,7 +1157,7 @@ font-size: 1 rem;
 /*---Acordeón cursos---*/
 
 .preguntas-frecuentes {
-    padding: 80px 150px;
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1212,10 +1204,7 @@ font-size: 1 rem;
 .preguntas-frecuentes .acordeon-contenido-cursos p {
     margin: 0;
     text-align: left;
-    line-height: 1.6;
     color: #430D21;
-    font-size: 1rem;
-    font-family: 'Inter', sans-serif;
     width: 90%;
     max-width: 1000px;
 }
@@ -1357,9 +1346,11 @@ font-size: 1 rem;
 #ventana-gracias .ventana-contenido {
     background: #DEC1BF;
 }
+
 #ventana-gracias-contacto .ventana-contenido {
     background: #C8D9A7;
 }
+
 /* ------ RESPONSIVE ----- */
 @media screen and (max-width: 500px) {
 
@@ -1414,7 +1405,7 @@ font-size: 1 rem;
         line-height: 1.5;
     }
 
-/*--- INDEX ---*/
+    /*--- INDEX ---*/
 
     /* HERO */
     .heroindex {
@@ -1514,7 +1505,7 @@ font-size: 1 rem;
         margin: 0px;
     }
 
-        .ctacontenido a {
+    .ctacontenido a {
         margin: 20px 0px 0px 0px;
     }
 
@@ -1782,13 +1773,13 @@ font-size: 1 rem;
         border-radius: 30px;
     }
 
-    .cards-slider{
-    display: block;
-    width: 100%;
+    .cards-slider {
+        display: block;
+        width: 100%;
     }
 
     .cards-slider p {
-    max-width: 90vw;
+        max-width: 90vw;
     }
 
     .preguntas-frecuentes {
