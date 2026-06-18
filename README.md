@@ -10,7 +10,7 @@ Visual Studio Code
 https://www.figma.com/design/9BEQotPXK6LzZzf7aBDq55/G3---Cuerpo-Conciente?node-id=318-2&t=Dm0lJrMH99guW7fy-1
 
 ## Resolución de Pantalla de cada integrante
-Brisa: 1844 x 871
-Agus: 1920 x 1080 
-Melanie: 1920 x 1080
-Mica: 1366 x 768
+Brisa: 1844 x 871 | 
+Agus: 1920 x 1080 | 
+Melanie: 1920 x 1080 | 
+Mica: 1366 x 768 | 
