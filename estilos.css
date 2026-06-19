@@ -476,7 +476,7 @@ ul {
 }
 
 .cursos-cards a {
-    background-color:#430D21;
+    background-color: #430D21;
     color: #EFE3D9;
 }
 
@@ -621,7 +621,7 @@ ul {
 /* INDEX CTA */
 
 .ctaindex {
-    background-color:#430D21;
+    background-color: #430D21;
     height: 90vh;
     padding: 60px 0px;
     display: flex;
@@ -677,6 +677,72 @@ ul {
     margin: 40px auto;
     max-width: 90%;
     height: auto;
+}
+
+/*---HERO GALERÍA---*/
+
+.hero-container-nosotros {
+    position: relative;
+    max-width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 40px;
+    aspect-ratio: 21 / 9; 
+    background-color: #EFE3D9;
+}
+
+.hero-slider-nosotros {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;         
+    transition: opacity 0.8s ease-in-out;
+    pointer-events: none;
+}
+
+.hero-slide.active {
+    opacity: 1;         
+    pointer-events: auto;
+}
+
+/* Botones */
+.prev-hero {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 24px;
+    color: #430D21;
+    border-radius: 50%;
+}
+
+.next-hero-nosotros {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 24px;
+    color: #430D21;
+    border-radius: 50%;
 }
 
 /*SOBRE CUERPO CONCIENTE*/
@@ -1556,7 +1622,7 @@ ul {
         text-decoration: none;
         border-radius: 100px;
         font-family: 'Cabinet Grotesk', sans-serif;
-        background-color:#430D21;
+        background-color: #430D21;
         color: #EFE3D9;
         font-size: 1.5rem;
         margin: 20px 0px 0px 0px;
